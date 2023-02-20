@@ -34,7 +34,7 @@ import glitchText from './glitchText.vue';
 }
 
 .box {
-    margin: 0 0 2vw 2vw;
+    margin: 0 2vw 2vw 2vw;
     min-height: 85vh;
     border: white 2px solid;
     border-color: white transparent transparent white;

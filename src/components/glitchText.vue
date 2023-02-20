@@ -43,9 +43,11 @@ onMounted(() => {
 </template>
 
 <style lang="scss" scoped>
+@import '../assets/main.css';
+
 h1 {
     font-size: 3rem;
-    color: white;
+    color: var(--white);
     padding: 0rem clamp(1rem, 2vw, 3rem);
     border-radius: clamp(0.4rem, 0.75vw, 1rem);
 }
