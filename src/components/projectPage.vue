@@ -1,16 +1,17 @@
 <script setup>
 import arrow from './arrow.vue';
 import glitchText from './glitchText.vue';
-
+import menuq from './menu.vue';
 </script>
 
 <template>
     <div class="navigation">
         <arrow />
-        <glitchText title="Welecome to this undersite" />
+        <menuq />
     </div>
 
     <div class="box">
+        <glitchText title="Welecome to this undersite" />
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste facilis amet dicta quod deserunt modi,
             necessitatibus at iure quibusdam officia voluptate fugit voluptatem eligendi! Pariatur veritatis reiciendis
@@ -28,20 +29,24 @@ import glitchText from './glitchText.vue';
 </template>
 
 <style lang="scss" scoped>
+@import '../assets/main.css';
+
 .navigation {
     display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
     align-items: center;
 }
 
 .box {
     margin: 0 2vw 2vw 2vw;
-    min-height: 85vh;
-    border: white 2px solid;
-    border-color: white transparent transparent white;
+    min-height: 55vh;
+    border: var(--white) 2px solid;
+    border-color: var(--white) transparent transparent var(--white);
 
     p {
-        padding: 15px 0 0 20px;
-        color: white;
+        padding: 0 0 0 20px;
+        color: var(--white);
     }
 
 }

@@ -48,7 +48,13 @@ onMounted(() => {
 h1 {
     font-size: 3rem;
     color: var(--white);
-    padding: 0rem clamp(1rem, 2vw, 3rem);
-    border-radius: clamp(0.4rem, 0.75vw, 1rem);
+    padding: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+
+    }
 }
 </style>
