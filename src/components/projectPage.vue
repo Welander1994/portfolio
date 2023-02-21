@@ -46,6 +46,7 @@ import menuq from './menu.vue';
 
     p {
         padding: 0 0 0 20px;
+        width: 50vw;
         color: var(--white);
     }
 
