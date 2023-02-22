@@ -144,7 +144,7 @@ function dateBuilder() {
 
 .content {
     padding: 1rem;
-    height: 85ch;
+    height: 55vh;
 
 }
 

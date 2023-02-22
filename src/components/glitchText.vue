@@ -30,7 +30,7 @@ onMounted(() => {
             clearInterval(interval);
         }
 
-        iteration += 1 / 1.5;
+        iteration += 1 / 3;
     }, 30);
 
 })

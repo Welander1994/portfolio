@@ -1,16 +1,16 @@
 <script setup>
-import header__menu from './header__menu.vue';
-import glitchText from './glitchText.vue';
-import weatherApp from './weatherApp/weather.vue'
+
+import glitchText from '../components/glitchText.vue';
+import weatherApp from '../components/weatherApp/weather.vue'
+import Header__menu from './header__menu.vue';
 
 </script>
 
 <template>
     <div class="navigation">
-        <header__menu />
+        <Header__menu />
     </div>
-
-    <div class="box">
+<!--     <div class="box">
         <div class="box__content">
             <glitchText title="Weather api" />
             <p>
@@ -29,8 +29,7 @@ import weatherApp from './weatherApp/weather.vue'
             <weatherApp />
         </div>
 
-    </div>
-</template>
+    </div> --></template>
 
 <style lang="scss" scoped>
 .box {
@@ -47,7 +46,7 @@ import weatherApp from './weatherApp/weather.vue'
     }
 
     &__img {
-        width: 100vw;
+        width: 90vw;
         height: 100%;
         display: flex;
         justify-content: center;
@@ -55,5 +54,25 @@ import weatherApp from './weatherApp/weather.vue'
 
     }
 
+
+
+}
+
+@media only screen and (max-width: 400px) {
+    .box {
+
+        flex-direction: column;
+        overflow-y: hidden;
+
+        p {
+            width: 85vw;
+            padding: 0 20px;
+        }
+
+        .box__img {
+            height: auto;
+            padding: 10vh 0;
+        }
+    }
 }
 </style>

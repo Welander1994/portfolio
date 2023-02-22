@@ -6,7 +6,10 @@ import arrow from './arrow.vue';
 
 <template>
     <div>
-        <arrow />
+        <RouterLink to="/">
+            <arrow />
+        </RouterLink>
+
         <burger__menu />
     </div>
 </template>
@@ -17,5 +20,10 @@ div {
     padding: 0 10px;
     justify-content: space-between;
     align-items: center;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
 }
 </style>
