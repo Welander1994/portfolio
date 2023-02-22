@@ -10,7 +10,7 @@ import arrow from './arrow.vue';
             <arrow />
         </RouterLink>
 
-        <burger__menu />
+      <!--   <burger__menu /> -->
     </div>
 </template>
 

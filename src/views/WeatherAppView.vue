@@ -24,6 +24,17 @@ import weatherApp from '../components/weatherApp/weather.vue'
         necessitatibus at iure quibusdam officia voluptate fugit voluptatem eligendi! Pariatur veritatis reiciendis
         excepturi magni error?
       </p>
+
+      <h2>Things i learned</h2>
+
+      <ul>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+      </ul>
     </div>
     <div class="box__img">
       <weatherApp />
@@ -40,10 +51,23 @@ import weatherApp from '../components/weatherApp/weather.vue'
   border: var(--white) 2px solid;
   border-color: var(--white) transparent transparent var(--white);
 
-  p {
+  p, h2{
     padding: 0 20px;
     width: 50vw;
     color: var(--white);
+
+
+  }
+
+  ul {
+    padding: 20px 30px;
+    list-style: circle;
+
+    color: white;
+
+    li {
+      padding: 5px 0;
+    }
   }
 
   &__img {

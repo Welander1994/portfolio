@@ -43,10 +43,10 @@
 <style lang="scss" scoped>
 * {
     position: fixed;
-    top: -1.5vh;
+    top: -2vh;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     z-index: -99;
 }
 
@@ -82,19 +82,19 @@
     }
 
     90% {
-        transform: translateY(85vh) scale(1);
+        transform: translateY(90vh) scale(1);
 
     }
 
     95% {
-        transform: translateY(85vh) scalex(7) scaleY(-.1);
+        transform: translateY(90vh) scalex(7) scaleY(-.1);
         border-radius: 50%;
         opacity: 100%;
     }
 
     100% {
 
-        transform: translateY(85vh) scalex(7) scaleY(-.2);
+        transform: translateY(90vh) scalex(7) scaleY(-.2);
         border-radius: 50%;
         opacity: 0%;
     }
