@@ -1,53 +1,58 @@
 <script setup>
-import arrow from './arrow.vue';
+import header__menu from './header__menu.vue';
 import glitchText from './glitchText.vue';
-import menuq from './menu.vue';
+import weatherApp from './weatherApp/weather.vue'
+
 </script>
 
 <template>
     <div class="navigation">
-        <arrow />
-        <menuq />
+        <header__menu />
     </div>
 
     <div class="box">
-        <glitchText title="Welecome to this undersite" />
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste facilis amet dicta quod deserunt modi,
-            necessitatibus at iure quibusdam officia voluptate fugit voluptatem eligendi! Pariatur veritatis reiciendis
-            excepturi magni error?
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste facilis amet dicta quod deserunt modi,
-            necessitatibus at iure quibusdam officia voluptate fugit voluptatem eligendi! Pariatur veritatis reiciendis
-            excepturi magni error?
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste facilis amet dicta quod deserunt modi,
-            necessitatibus at iure quibusdam officia voluptate fugit voluptatem eligendi! Pariatur veritatis reiciendis
-            excepturi magni error?
-        </p>
-
+        <div class="box__content">
+            <glitchText title="Weather api" />
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste facilis amet dicta quod deserunt modi,
+                necessitatibus at iure quibusdam officia voluptate fugit voluptatem eligendi! Pariatur veritatis reiciendis
+                excepturi magni error?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste facilis amet dicta quod deserunt modi,
+                necessitatibus at iure quibusdam officia voluptate fugit voluptatem eligendi! Pariatur veritatis reiciendis
+                excepturi magni error?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste facilis amet dicta quod deserunt modi,
+                necessitatibus at iure quibusdam officia voluptate fugit voluptatem eligendi! Pariatur veritatis reiciendis
+                excepturi magni error?
+            </p>
+        </div>
+        <div class="box__img">
+            <weatherApp />
+        </div>
 
     </div>
 </template>
 
 <style lang="scss" scoped>
-@import '../assets/main.css';
-
-.navigation {
-    display: flex;
-    padding: 0 20px;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .box {
+    display: flex;
     margin: 0 2vw 2vw 2vw;
-    min-height: 55vh;
+
     border: var(--white) 2px solid;
     border-color: var(--white) transparent transparent var(--white);
 
     p {
-        padding: 0 0 0 20px;
+        padding: 0 20px;
         width: 50vw;
         color: var(--white);
+    }
+
+    &__img {
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 6vh;
+
     }
 
 }

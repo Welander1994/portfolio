@@ -1,0 +1,21 @@
+<script setup>
+import burger__menu from './burger__menu.vue';
+import arrow from './arrow.vue';
+
+</script>
+
+<template>
+    <div>
+        <arrow />
+        <burger__menu />
+    </div>
+</template>
+
+<style lang="scss" scoped>
+div {
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+</style>
