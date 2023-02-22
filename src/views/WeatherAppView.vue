@@ -25,15 +25,19 @@ import weatherApp from '../components/weatherApp/weather.vue'
         excepturi magni error?
       </p>
 
+      <nav>
+        <ul class="links">
+          <li><img src="../assets/img/GitHub_Logo_White.png" alt="github"></li>
+          <li><img src="../assets/img/logo_white_cropped.png" alt="github"></li>
+        </ul>
+      </nav>
+
       <h2>Things i learned</h2>
 
       <ul>
-        <li>test</li>
-        <li>test</li>
-        <li>test</li>
-        <li>test</li>
-        <li>test</li>
-        <li>test</li>
+        <li> <span> Api:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus similique consectetur qui tenetur, enim </li>
+        <li> <span> Vue3:</span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae obcaecati error autem quo deserunt laudantium</li>
+        <li><span>sass: </span></li>
       </ul>
     </div>
     <div class="box__img">
@@ -51,22 +55,41 @@ import weatherApp from '../components/weatherApp/weather.vue'
   border: var(--white) 2px solid;
   border-color: var(--white) transparent transparent var(--white);
 
+  .links {
+    display: flex;
+    list-style: none;
+
+    li {
+      padding-right: 20px;
+      img {
+        width: 100px;
+      }
+    }
+  }
+
   p, h2{
     padding: 0 20px;
     width: 50vw;
     color: var(--white);
+  }
 
-
+  h2 {
+    padding: 30px 20px 10px 20px;
   }
 
   ul {
-    padding: 20px 30px;
+    padding: 20px 20px;
     list-style: circle;
 
     color: white;
 
     li {
       padding: 5px 0;
+      
+      span {
+        font-weight: 900;
+        font-size: 16px;
+      }
     }
   }
 
@@ -83,7 +106,7 @@ import weatherApp from '../components/weatherApp/weather.vue'
 
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
   .box {
 
     flex-direction: column;
