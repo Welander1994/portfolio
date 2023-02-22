@@ -4,17 +4,14 @@ import Rain from './rain.vue';
 import Snow from './snow.vue';
 import Mist from './mist.vue';
 import Thunder from './thunder.vue';
-
+import clouds from './clouds.vue';
 
 const api_key = 'f114c1d8edfe049f0d1de15551609120';
 const url_base = 'https://api.openweathermap.org/data/2.5/';
 let query = ref('');
 let weather = ref({});
 
-let Raining = ref(false);
-let Snowing = ref(false);
-let Misty = ref(false);
-let Thundering = ref(false);
+let weather__type = ref('');
 
 
 async function fetchWeather() {
@@ -29,25 +26,37 @@ async function fetchWeather() {
 
 function setResults(results) {
     weather.value = results;
-    console.log(results);
 
-    switch (results.weather[0].main) {
-        case 'Rain':
-            Raining.value = true;
-            break;
-        case 'Snow':
-            Snowing.value = true;
-            break;
-        case 'Mist':
-            Misty.value = true;
-            break;
-        case 'Fog':
-            Misty.value = true;
-            break;
-        case 'Thunderstorm':
-            Thundering.value = true;
-            break;
+
+    if (weather._rawValue.message == 'city not found' || weather._rawValue.message == 'Nothing to geocode') {
+        weather__type.value = '';
+    } else {
+
+        switch (results.weather[0].main) {
+            case 'Rain':
+                weather__type.value = 'Raining'
+                break;
+            case 'Snow':
+                weather__type.value = 'Snowing'
+                break;
+            case 'Mist':
+                weather__type.value = 'Misty'
+                break;
+            case 'Clouds':
+                weather__type.value = 'Clouds'
+                break;
+            case 'Fog':
+                weather__type.value = 'Misty'
+                break;
+            case 'Thunderstorm':
+                weather__type.value = 'Thundering'
+                break;
+        }
+
     }
+
+
+
 };
 
 
@@ -64,9 +73,6 @@ function dateBuilder() {
     let year = d.getFullYear();
     return `${day} ${date} ${month} ${year}`;
 }
-
-
-
 
 
 </script>
@@ -103,20 +109,24 @@ function dateBuilder() {
             </div>
         </div>
 
-        <div v-if="Raining">
+        <div v-if="weather__type == 'Raining'">
             <rain />
         </div>
 
-        <div v-if="Snowing">
+        <div v-if="weather__type == 'Snowing'">
             <Snow />
         </div>
 
-        <div v-if="Misty">
-
+        <div v-if="weather__type == 'Misty'">
+            <Mist />
         </div>
 
-        <div v-if="Thundering">
+        <div v-if="weather__type == 'Thundering'">
             <Thunder />
+        </div>
+
+        <div v-if="weather__type == 'Clouds'">
+            <clouds />
         </div>
 
     </div>
