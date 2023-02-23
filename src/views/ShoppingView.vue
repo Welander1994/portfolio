@@ -43,9 +43,8 @@ import weatherApp from '../components/weatherApp/weather.vue'
       <h2>Things i learned</h2>
 
       <ul class="box__learn">
-        <li><span> Api: </span> </li>
-        <li><span> Vue3: </span></li>
-        <li><span>Css Animation: </span></li>
+        <li><span> Vue: </span></li>
+        <li><span>Local storage: </span></li>
       </ul>
     </div>
     <div class="box__img">
@@ -58,8 +57,9 @@ import weatherApp from '../components/weatherApp/weather.vue'
 <style lang="scss" scoped>
 .box {
   display: flex;
+
   margin: 0 2vw 2vw 2vw;
-  padding: 10px 30px;
+  padding: 30px;
   border: var(--white) 2px solid;
   border-color: var(--white) transparent transparent var(--white);
 
@@ -71,6 +71,7 @@ import weatherApp from '../components/weatherApp/weather.vue'
       padding-right: 20px;
       display: flex;
       align-items: center;
+
 
       #shopping__img {
         background-image: url('../assets/img/icon-192x192.png');
@@ -97,6 +98,11 @@ import weatherApp from '../components/weatherApp/weather.vue'
         box-shadow: 0px 0px 23px 0px rgb(0 0 0 / 59%);
         -webkit-box-shadow: 10px 10px 23px 0px rgb(0 0 0 / 59%);
         -moz-box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.59);
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.13);
+        }
+
       }
     }
   }
@@ -104,7 +110,7 @@ import weatherApp from '../components/weatherApp/weather.vue'
   p,
   h2,
   h1 {
-    padding: 20px 0;
+    padding: 20px 0 20px 0;
     width: 50vw;
     color: var(--white);
   }
