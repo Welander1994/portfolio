@@ -12,7 +12,7 @@ import weatherApp from '../components/weatherApp/weather.vue'
 
   <div class="box">
     <div class="box__content">
-      <glitchText title="Shopping list" />
+      <glitchText title="Shopping list app" />
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste facilis amet dicta quod deserunt modi,
         necessitatibus at iure quibusdam officia voluptate fugit voluptatem eligendi! Pariatur veritatis reiciendis
@@ -27,19 +27,25 @@ import weatherApp from '../components/weatherApp/weather.vue'
 
       <nav>
         <ul class="links">
-          <li><img src="../assets/img/GitHub_Logo_White.png" alt="github"></li>
-          <li><img src="../assets/img/logo_white_cropped.png" alt="github"></li>
+          <li>
+            <a href="https://github.com/Welander1994/ShopppingList" target="_blank">
+              <img src="../assets/img/GitHub_Logo_White.png" alt="github">
+            </a>
+          </li>
+          <li>
+            <a id="shopping__img" href="https://we-lander.dk/ShoppingList/" target="_blank">
+
+            </a>
+          </li>
         </ul>
       </nav>
 
       <h2>Things i learned</h2>
 
-      <ul>
-        <li> <span> Api:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus similique
-          consectetur qui tenetur, enim </li>
-        <li> <span> Vue3:</span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae obcaecati error autem quo
-          deserunt laudantium</li>
-        <li><span>sass: </span></li>
+      <ul class="box__learn">
+        <li><span> Api: </span> </li>
+        <li><span> Vue3: </span></li>
+        <li><span>Css Animation: </span></li>
       </ul>
     </div>
     <div class="box__img">
@@ -53,7 +59,7 @@ import weatherApp from '../components/weatherApp/weather.vue'
 .box {
   display: flex;
   margin: 0 2vw 2vw 2vw;
-
+  padding: 10px 30px;
   border: var(--white) 2px solid;
   border-color: var(--white) transparent transparent var(--white);
 
@@ -63,67 +69,118 @@ import weatherApp from '../components/weatherApp/weather.vue'
 
     li {
       padding-right: 20px;
+      display: flex;
+      align-items: center;
+
+      #shopping__img {
+        background-image: url('../assets/img/icon-192x192.png');
+        background-position: center;
+        background-size: 40%;
+        background-repeat: no-repeat;
+        background-color: rgb(24, 24, 24);
+        width: 90px;
+        align-items: center;
+        height: 45px;
+        padding: 5px 30px;
+        border-radius: 25px;
+        box-shadow: 0px 0px 23px 0px rgb(0 0 0 / 59%);
+        -webkit-box-shadow: 10px 10px 23px 0px rgb(0 0 0 / 59%);
+        -moz-box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.59);
+      }
 
       img {
-        width: 100px;
+        width: 90px;
+        align-items: center;
+        max-height: 45px;
+        padding: 5px 30px;
+        border-radius: 25px;
+        box-shadow: 0px 0px 23px 0px rgb(0 0 0 / 59%);
+        -webkit-box-shadow: 10px 10px 23px 0px rgb(0 0 0 / 59%);
+        -moz-box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.59);
       }
     }
   }
 
   p,
-  h2 {
-    padding: 0 20px;
+  h2,
+  h1 {
+    padding: 20px 0;
     width: 50vw;
     color: var(--white);
   }
 
-  h2 {
-    padding: 30px 20px 10px 20px;
-  }
 
-  ul {
-    padding: 20px 20px;
+  .box__learn {
+
+
     list-style: circle;
-
     color: white;
 
     li {
       padding: 5px 0;
+      margin-left: 20px;
 
       span {
         font-weight: 900;
         font-size: 16px;
       }
     }
+
   }
 
   &__img {
     width: 90vw;
     height: 100%;
+
     display: flex;
     justify-content: center;
     padding-top: 6vh;
 
+    .content {
+      max-height: 500px;
+    }
   }
 
 
 
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
   .box {
 
     flex-direction: column;
-    overflow-y: hidden;
+    max-width: 100vw;
+    align-items: center;
+
+    .box__content {
+      width: 110%;
+    }
+
+    p,
+    h2,
+    h1 {
+      padding: 20px 0;
+      width: 90vw;
+      color: var(--white);
+    }
 
     p {
-      width: 85vw;
-      padding: 0 20px;
+      width: 100%;
+      padding: 0 0 20px 0;
+    }
+
+    nav {
+      ul {
+        padding: 20px 0;
+        justify-content: space-around;
+        align-items: center;
+      }
     }
 
     .box__img {
       height: auto;
       padding: 10vh 0;
+      width: 90vw;
     }
   }
 }

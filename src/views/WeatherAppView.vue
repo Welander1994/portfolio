@@ -43,11 +43,9 @@ import weatherApp from '../components/weatherApp/weather.vue'
       <h2>Things i learned</h2>
 
       <ul class="box__learn">
-        <li> <span> Api:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus similique
-          consectetur qui tenetur, enim </li>
-        <li> <span> Vue3:</span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae obcaecati error autem quo
-          deserunt laudantium</li>
-        <li><span>sass: </span></li>
+        <li><span> Api: </span> </li>
+        <li><span> Vue3: </span></li>
+        <li><span>Css Animation: </span></li>
       </ul>
     </div>
     <div class="box__img">
@@ -74,7 +72,15 @@ import weatherApp from '../components/weatherApp/weather.vue'
       align-items: center;
 
       img {
-        width: 100px;
+        width: 90px;
+        align-items: center;
+        max-height: 45px;
+        padding: 5px 30px;
+        border-radius: 25px;
+        box-shadow: 0px 0px 23px 0px rgb(0 0 0 / 59%);
+        -webkit-box-shadow: 10px 10px 23px 0px rgb(0 0 0 / 59%);
+        -moz-box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.59);
+
       }
     }
   }
