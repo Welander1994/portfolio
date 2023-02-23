@@ -6,33 +6,33 @@ defineProps({
 })
 
 function glitch() {
-        const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-let interval = null;
-let event = document.getElementById("header");
+    let interval = null;
+    let event = document.getElementById("header");
 
-let iteration = 0;
+    let iteration = 0;
 
-clearInterval(interval);
+    clearInterval(interval);
 
-interval = setInterval(() => {
-    event.innerText = event.innerText
-        .split("")
-        .map((letter, index) => {
-            if (index < iteration) {
-                return event.dataset.value[index];
-            }
+    interval = setInterval(() => {
+        event.innerText = event.innerText
+            .split("")
+            .map((letter, index) => {
+                if (index < iteration) {
+                    return event.dataset.value[index];
+                }
 
-            return letters[Math.floor(Math.random() * 26)]
-        })
-        .join("");
+                return letters[Math.floor(Math.random() * 26)]
+            })
+            .join("");
 
-    if (iteration >= event.dataset.value.length) {
-        clearInterval(interval);
-    }
+        if (iteration >= event.dataset.value.length) {
+            clearInterval(interval);
+        }
 
-    iteration += 1 / 3;
-}, 30);
+        iteration += 1 / 3;
+    }, 30);
 
 
 }
@@ -58,7 +58,7 @@ h1 {
     font-size: 3rem;
     color: var(--white);
     padding: 20px;
- 
+
 }
 
 .text-small {
@@ -67,7 +67,7 @@ h1 {
 
 @media screen and (max-width: 480px) {
     h1 {
-        font-size: 1.2rem;
+        font-size: 2rem;
 
     }
 }
