@@ -12,7 +12,7 @@ import glitchText from '../components/glitchText.vue';
   <main>
     <div class="main__title">
       <h1 id="Web__title">Web developer </h1>
-      <glitchText title="Jacob Welander" />
+      <glitchText class="gradient-text" title="Jacob Welander" />
      
     </div>
     <div class="main__img">
@@ -51,12 +51,14 @@ main {
   }
 
   h1 {
-    max-width: 40vw;
+    max-width: 50vw;
     font-size: 4rem;
     text-transform: uppercase;
     -webkit-text-stroke: 1px white;
     color: white;
   }
+
+  
 }
 
 a {
@@ -72,6 +74,29 @@ h1 {
 
 
 }
+
+
+.gradient-text {
+  /* Fallback: Set a background color. */
+  background-color: red;
+  
+  /* Create the gradient. */
+	background: linear-gradient(60deg, #30CFD0 0%, #844dc6 100%);
+  
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  
+  -webkit-text-stroke: 2px transparent;
+}
+
 </style>
 
 
