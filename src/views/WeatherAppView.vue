@@ -84,9 +84,9 @@ import weatherApp from '../components/weatherApp/weather.vue'
         max-height: 45px;
         padding: 5px 30px;
         border-radius: 25px;
-        box-shadow: 0px 0px 23px 0px rgb(0 0 0 / 59%);
-        -webkit-box-shadow: 10px 10px 23px 0px rgb(0 0 0 / 59%);
-        -moz-box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.59);
+        box-shadow: 5px 5px 13px 0px rgb(0 0 0 / 59%);
+        -webkit-box-shadow: 5px 5px 13px 0px rgb(0 0 0 / 59%);
+        -moz-box-shadow: 5px 5px 13px 0px rgba(0, 0, 0, 0.59);
 
         &:hover {
           background-color: rgba(255, 255, 255, 0.13);
