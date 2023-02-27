@@ -13,8 +13,11 @@ import glitchText from '../components/glitchText.vue';
     <div class="main__title">
       <h1 id="Web__title">Web developer </h1>
       <glitchText title="Jacob Welander" />
+     
     </div>
+    <div class="main__img">
 
+    </div>
   </main>
 </template>
 
@@ -40,6 +43,8 @@ main {
 
   border: var(--white) 2px solid;
   border-color: var(--white) transparent transparent var(--white);
+
+
 
   #Web__title {
     color: transparent;
