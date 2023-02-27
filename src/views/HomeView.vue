@@ -16,6 +16,51 @@ import glitchText from '../components/glitchText.vue';
      
     </div>
     <div class="main__img">
+      <pre>
+
+
+
+
+
+                 ...... ...       ..
+             .';:cc;;;:::,'.........
+            ;dddxxxxxxxxxddolllc::;;'...
+           lddxxxkkkkkkkkxxxdddoollcc:;,..
+          lxxxkkkkkkkkkkkxxdddoolcccc::;'..
+         'ddxxkkkkkkkkkkxxddoolcc:cc::;;,..
+         codddxxxxxkxxxddoolllccc::;;;;;,'.
+        ,oodddxxxxxxdddoolllllcc::;;;;,,'...
+        ldddxdxxxxxxxxddoooollcc:;;,,,'....
+       'clllooododdxxxdddddoolcc:,,,''...
+       ',,''':clll::::clooooooc:;,,,,'....
+        ...',,clc,......',;;;;:;,,,,,''...
+        ..;ll:ldl,....  .'..'..'',,;;;;,.       ..
+        ':::coxdc;,',''',:,.....',;:::;,.    .''..
+        :ooddxxc::cccc:;;,,,,,;;:ccc::;'.   ...''..
+        oxxkkxoc;;:clodddoooolllllc::;,.   ....;;',
+        oxkxxoc;;;:;cdxkkkkxxdoolc::;;,.  .'.,,c:;.
+       .oxxoc;...',,,lxkkkxddollc::;;,'.  .',:::;.
+       .loll;'.....':loxxxddolllc:;;,'..  .,;;,.
+       .cl:;''';,'';:llodddolccc:;,,'..    .
+       '::,...,,....';:cloollcc::,''...
+       .,::,::cc:;,'.',;:lolcc::,,'...
+       '';:;:c;;:ccccc:;,ccc:;,,,'...
+      ...,,,:::::lllcc:;,,;;,,''....
+   .... ...';:cccllcc:;,''......
+ ..       .''',,,,;,''.......           .
+           ............               ...
+            ..  ....                 ......
+...                                     ......
+....                                  ...........
+                            ...............
+                            .............
+                           ...........
+
+
+
+</pre>
+    </div>
+    <div>
 
     </div>
   </main>
@@ -23,6 +68,13 @@ import glitchText from '../components/glitchText.vue';
 
 
 <style lang="scss" scoped>
+
+pre {
+  font-family: 'Courier New', Courier, monospace;
+  white-space: pre;
+  color: white;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -37,25 +89,35 @@ nav {
 
 main {
   display: flex;
-
+  flex-direction: row;
   margin: 0 2vw 2vw 2vw;
   padding: 30px;
 
   border: var(--white) 2px solid;
   border-color: var(--white) transparent transparent var(--white);
 
+  .main__img {
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
 
+
+    pre {
+      font-size: 14px;
+    }
+  }
 
   #Web__title {
     color: transparent;
   }
 
   h1 {
-    max-width: 50vw;
+    width: 50vw;
     font-size: 4rem;
     text-transform: uppercase;
     -webkit-text-stroke: 1px white;
-    color: white;
+    color: var(--white);
   }
 
   
@@ -63,7 +125,7 @@ main {
 
 a {
   text-decoration: none;
-  color: white;
+  color: var(--white);
   padding: 0 20px;
 }
 
@@ -81,7 +143,7 @@ h1 {
   background-color: red;
   
   /* Create the gradient. */
-	background: linear-gradient(60deg, #30CFD0 0%, #844dc6 100%);
+	background: linear-gradient(60deg, var(--white) 0%, var(--gray) 100%);
   
   /* Set the background size and repeat properties. */
   background-size: 100%;

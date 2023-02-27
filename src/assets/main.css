@@ -1,8 +1,10 @@
 :root {
   --main-bg-color: #181818;
-  --purple: #8758FF;
+  --purple: #7063bc;
+  --dark: #1f1c19;
+  --gray: #adabbf;
   --blue: #5CB8E4;
-  --white: #F2F2F2;
+  --white: #f2f2f2;
   --dark-blue: #1A1B25;
 
 
@@ -27,7 +29,9 @@ body {
   background: linear-gradient(25deg, rgba(0, 97, 111, 1) 0%, rgba(31, 38, 103, 1) 100%); */
 
   background: rgb(20,20,20);
-background: linear-gradient(45deg, rgb(9, 9, 9) 0%, rgb(99, 33, 111) 100%);
+background: linear-gradient(45deg, var(--dark-blue) 0%, var(--purple) 100%);
+
+color: var(--gray);
 
   /*   background: rgb(0, 48, 55);
   background: linear-gradient(7deg, rgba(0, 48, 55, 1) 0%, rgba(23, 26, 56, 1) 100%); */
