@@ -20,16 +20,9 @@ import menu_bar from '../components/menu/menu.vue'
 
 
 <style lang="scss" scoped>
-.main__title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 main {
   display: flex;
   flex-direction: row;
-
 
   margin: 0 2vw 2vw 2vw;
   padding: 30px;
@@ -37,20 +30,24 @@ main {
   border: var(--white) 2px solid;
   border-color: var(--white) transparent transparent var(--white);
 
-
+  .main__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 40vw;
+  }
 
   #Web__title {
     color: transparent;
   }
 
   h1 {
-    width: 50vw;
+    max-width: 50vw;
     font-size: 4rem;
     text-transform: uppercase;
     -webkit-text-stroke: 1px white;
     color: var(--white);
   }
-
 
 }
 
@@ -84,6 +81,28 @@ h1 {
   -moz-text-fill-color: transparent;
 
   -webkit-text-stroke: 2px transparent;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+
+  main {
+    flex-direction: column;
+
+    width: 80vw;
+
+    h1 {
+      font-size: 3rem;
+      max-width: 100%;
+    }
+
+    .main__img {
+      padding: 5vw;
+    }
+
+  }
+
 }
 </style>
 
