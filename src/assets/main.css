@@ -18,20 +18,21 @@
 * {
   margin: 0;
   padding: 0;
-/*   font-family: 'Space Mono', monospace; */
-font-family: myFirstFont;
+  /*   font-family: 'Space Mono', monospace; */
+
 }
 
 body {
   min-width: 100vw;
   min-height: 100vh;
-/*   background: rgb(0, 97, 111);
+  /*   background: rgb(0, 97, 111);
   background: linear-gradient(25deg, rgba(0, 97, 111, 1) 0%, rgba(31, 38, 103, 1) 100%); */
 
-  background: rgb(20,20,20);
-background: linear-gradient(45deg, var(--dark-blue) 0%, var(--purple) 100%);
+  background: rgb(20, 20, 20);
+  background: linear-gradient(45deg, var(--dark-blue) 0%, var(--purple) 100%);
 
-color: var(--gray);
+  color: var(--gray);
+  font-family: myFirstFont;
 
   /*   background: rgb(0, 48, 55);
   background: linear-gradient(7deg, rgba(0, 48, 55, 1) 0%, rgba(23, 26, 56, 1) 100%); */

@@ -1,5 +1,5 @@
 <script setup>
-import burger__menu from './burger__menu.vue';
+import burger__menu from '../components/menu/burger__menu.vue';
 import arrow from './arrow.vue';
 
 </script>
@@ -10,7 +10,7 @@ import arrow from './arrow.vue';
             <arrow />
         </RouterLink>
 
-      <!--   <burger__menu /> -->
+        <!--   <burger__menu /> -->
     </div>
 </template>
 
