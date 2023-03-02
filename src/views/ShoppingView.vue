@@ -3,6 +3,7 @@ import header__menu from '../components/header__menu.vue';
 import glitchText from '../components/glitchText.vue';
 import weatherApp from '../components/weatherApp/weather.vue'
 
+
 </script>
 
 <template>
@@ -34,7 +35,6 @@ import weatherApp from '../components/weatherApp/weather.vue'
           </li>
           <li>
             <a id="shopping__img" href="https://we-lander.dk/ShoppingList/" target="_blank">
-
             </a>
           </li>
         </ul>

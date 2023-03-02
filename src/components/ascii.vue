@@ -1,11 +1,28 @@
 <script setup>
+import { onMounted } from 'vue';
+
+
+
+onMounted(() => {
+
+  let test = document.getElementById('pre').innerText.split('');
+  let test2 = '';
+console.log(test);
+
+  for( let i = 0; i < test.length; i++) {
+
+     test2 += '<span>' + test[i] + '</span>';
+  } 
+  console.log(test2);
+
+
+})
 
 </script>
 
 <template>
     <div>
-        <pre>
-
+        <pre id="pre"> 
                                 ................
                              .,;:cll:;;;::c:;,'............
                            .lodddxxxddxxxxdddooolcccc::;;,,'....
@@ -55,7 +72,6 @@
                                                        ...
                                                          .,,
                                                          ..
-
 </pre>
     </div>
 </template>
@@ -64,7 +80,7 @@
 <style lang="scss" scoped>
     pre {
 
-        height: 50vh;
+
         display: flex;
         justify-content: center;
         font-size: 10px;
