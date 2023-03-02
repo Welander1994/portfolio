@@ -39,6 +39,12 @@ nav {
   }
 }
 
+.main__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 main {
   display: flex;
   flex-direction: row;
@@ -49,6 +55,7 @@ main {
 
   border: var(--white) 2px solid;
   border-color: var(--white) transparent transparent var(--white);
+
 
 
   #Web__title {
