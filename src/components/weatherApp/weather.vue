@@ -145,10 +145,11 @@ function dateBuilder() {
 .content {
     padding: 1rem;
     height: 70vh;
+    max-width: 90%;
     border-radius: 25px;
-    box-shadow: 0px 0px 43px 0px rgba(0,0,0,0.59);
--webkit-box-shadow: 10px 10px 43px 0px rgba(0,0,0,0.59);
--moz-box-shadow: 0px 0px 43px 0px rgba(0,0,0,0.59);
+    box-shadow: 0px 0px 43px 0px rgba(0, 0, 0, 0.59);
+    -webkit-box-shadow: 10px 10px 43px 0px rgba(0, 0, 0, 0.59);
+    -moz-box-shadow: 0px 0px 43px 0px rgba(0, 0, 0, 0.59);
 }
 
 

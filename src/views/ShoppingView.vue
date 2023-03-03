@@ -187,7 +187,7 @@ import menu_bar from '../components/menu/menu.vue'
 
     .box__img {
       height: auto;
-      padding: 10vh 0;
+      padding: 0;
       width: 90vw;
     }
   }

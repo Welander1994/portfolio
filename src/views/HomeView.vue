@@ -95,8 +95,11 @@ h1 {
     width: 80vw;
 
     h1 {
-      font-size: 3rem;
+      font-size: 2rem;
       max-width: 100%;
+      -webkit-text-stroke: .5px white;
+      text-align: center;
+
     }
 
     .main__img {
@@ -104,6 +107,11 @@ h1 {
     }
 
   }
+
+  .gradient-text {
+    font-size: 1.85rem;
+  }
+
 
 }
 </style>
