@@ -1,5 +1,4 @@
 <script setup>
-import burger__menu from '../components/menu/burger__menu.vue';
 import arrow from './arrow.vue';
 
 </script>

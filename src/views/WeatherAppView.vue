@@ -2,12 +2,13 @@
 import header__menu from '../components/header__menu.vue';
 import glitchText from '../components/glitchText.vue';
 import weatherApp from '../components/weatherApp/weather.vue'
+import menu_bar from '../components/menu/menu.vue'
 
 </script>
 
 <template>
   <div class="navigation">
-    <header__menu />
+    <menu_bar classes="" type="project" />
   </div>
 
   <div class="box">
@@ -56,6 +57,8 @@ import weatherApp from '../components/weatherApp/weather.vue'
 </template>
 
 <style lang="scss" scoped>
+.navigation {}
+
 .box {
   display: flex;
 

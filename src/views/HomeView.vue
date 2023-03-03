@@ -5,7 +5,7 @@ import menu_bar from '../components/menu/menu.vue'
 </script>
 
 <template>
-  <menu_bar classes="" type="project" />
+  <menu_bar classes="home" type="project" />
   <main>
     <div class=" main__title">
       <h1 id="Web__title">Web developer </h1>
@@ -29,6 +29,8 @@ main {
 
   border: var(--white) 2px solid;
   border-color: var(--white) transparent transparent var(--white);
+
+  justify-content: space-around;
 
   .main__title {
     display: flex;

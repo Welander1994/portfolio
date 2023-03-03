@@ -1,19 +1,26 @@
 <script setup>
 import { ref } from 'vue';
 import burger__menu from './burger__menu.vue';
+import header__menu from '../header__menu.vue';
+
+defineProps({
+    classes: String
+})
+
 
 let menu = ref(false);
 
 function openMenu() {
     menu.value = !menu.value;
 }
-
-
 </script>
 
 <template>
     <div>
-        <nav>
+        <nav :class="classes">
+            <div class="arrow arrow-gone">
+                <header__menu />
+            </div>
             <div class="menu" :class="{ active: menu }">
                 <RouterLink to="/">Home</RouterLink>
                 <RouterLink to="/WeatherAppView">Weather App</RouterLink>
@@ -30,10 +37,19 @@ function openMenu() {
 </template>
 
 <style lang="scss" scoped>
+.hide {
+    display: none;
+}
+
+.arrow {
+    display: none;
+}
+
+
 nav {
     display: flex;
     align-items: center;
-
+    justify-content: space-between;
     height: 70px;
     padding: 0 1vw;
     font-size: 18px;
@@ -60,12 +76,28 @@ nav {
 
 @media only screen and (max-width: 700px) {
 
+    .home {
+        .arrow {
+            display: none;
+        }
+
+
+        justify-content: end;
+
+    }
+
+    .arrow {
+        display: flex;
+    }
+
+    .hide {
+        display: flex;
+    }
 
 
     nav {
-
         flex-direction: row;
-        justify-content: end;
+        justify-content: space-between;
         position: relative;
 
         a {
