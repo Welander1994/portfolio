@@ -60,22 +60,22 @@ nav {
         text-decoration: none;
         color: var(--white);
         padding: 0 20px;
-  
+
     }
 
     a:hover {
- 
 
-        animation: myanim .2s infinite;
-         
-         @keyframes myanim {
-            10% {
+
+        animation: myanim 3s infinite;
+
+        @keyframes myanim {
+            20% {
                 text-shadow: #ff1493 5px 0px, limegreen -5px 0px;
-                
+
             }
-  
-         }
-    
+
+        }
+
     }
 
     .burger__menu {
@@ -139,7 +139,7 @@ nav {
             flex-direction: column;
             justify-content: space-evenly;
             background: rgb(20, 20, 20);
-            background: linear-gradient(45deg, var(--dark-blue) 0%, var(--purple) 100%);
+            background: linear-gradient(43deg, rgba(20, 20, 20, 1) 0%, rgba(51, 51, 51, 1) 83%);
             box-shadow: 0 0 30px #00000069;
             transition: .5s ease-in;
 
