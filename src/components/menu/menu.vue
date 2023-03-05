@@ -33,7 +33,7 @@ function openMenu() {
             </div>
 
         </nav>
-    </div>-
+    </div>
 </template>
 
 <style lang="scss" scoped>
@@ -53,15 +53,29 @@ nav {
     height: 70px;
     padding: 0 1vw;
     font-size: 18px;
+    font-weight: bold;
+
 
     a {
         text-decoration: none;
         color: var(--white);
         padding: 0 20px;
+  
     }
 
     a:hover {
-        text-decoration: underline;
+ 
+
+        animation: myanim .2s infinite;
+         
+         @keyframes myanim {
+            10% {
+                text-shadow: #ff1493 5px 0px, limegreen -5px 0px;
+                
+            }
+  
+         }
+    
     }
 
     .burger__menu {

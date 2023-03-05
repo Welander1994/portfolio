@@ -61,7 +61,7 @@
 
 <style lang="scss" scoped>
 pre {
-  font-size: 11px;
+  font-size: 10px;
   font-family: 'Courier New', Courier, monospace;
   white-space: pre;
   color: #ffffff;

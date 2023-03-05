@@ -41,7 +41,9 @@ main {
 
   #Web__title {
     color: transparent;
-  }
+
+
+  } 
 
   h1 {
     max-width: 50vw;
