@@ -16,7 +16,7 @@ onMounted(() => {
     }
 
     ShoppingList.onmouseover = () => {
-        b.style.backgroundImage = "url('/src/assets/img/Untitled.jpg')";
+        b.style.backgroundImage = "url('/src/assets/img/shoppinglist.jpg')";
 
     }
 })
@@ -156,18 +156,20 @@ onMounted(() => {
 .main__img {
     width: 45vw;
     height: 80vh;
-    transition: 1s;
+    transition: .5s;
 
     display: flex;
     justify-content: center;
 
-
+    filter: opacity(50%);
     padding: 0vw;
-
     background-position: center;
     background-repeat: no-repeat;
+    background-clip: border-box;
 
-    filter: opacity(50%);
+
+
+
 
 
 }
@@ -183,11 +185,20 @@ onMounted(() => {
         width: fit-content;
         padding: 10px 0;
         text-transform: uppercase;
+        transition: .5s;
+        font-size: 24px;
+        animation: myanim 2s;
+        animation-delay: .8s;
 
+        &:nth-child(2) {
+            animation-delay: 1s;
+        }
     }
 
+
     a:hover {
-        animation: myanim 3s;
+        color: var(--white);
+        text-shadow: #ff1493 5px 0px, limegreen -5px 0px;
     }
 
     @keyframes myanim {
