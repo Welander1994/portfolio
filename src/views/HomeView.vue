@@ -132,12 +132,13 @@ a:hover {
 
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
 
   main {
     flex-direction: column;
 
     width: 80vw;
+    height: calc(85vh - 70px);
 
     h1 {
       font-size: 2.2rem;
@@ -167,6 +168,12 @@ a:hover {
   }
 
 
+}
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 2rem !important;
+  }
 }
 </style>
 
