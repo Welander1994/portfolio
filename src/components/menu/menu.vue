@@ -66,10 +66,10 @@ nav {
     a:hover {
 
 
-        animation: myanim 3s infinite;
+        animation: myanim 5s infinite;
 
         @keyframes myanim {
-            20% {
+            10% {
                 text-shadow: #ff1493 5px 0px, limegreen -5px 0px;
 
             }
