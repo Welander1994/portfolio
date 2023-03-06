@@ -2,15 +2,21 @@
 import glitchText from '../components/glitchText.vue';
 import ascii from '../components/ascii.vue'
 import menu_bar from '../components/menu/menu.vue'
+
+
+
 </script>
 
 <template>
   <menu_bar classes="home" type="project" />
   <main>
     <div class=" main__title">
-      <h1 id="Web__title">Web developer </h1>
+      <h1 id="Web__title">Hej, mit navn er </h1>
       <glitchText class="gradient-text" title="Jacob Welander" />
-
+      <p>
+        Studerer Web udvikler på UCL i Odense. Tjek mine <RouterLink to="/projectsView">Projekter</RouterLink> for at se
+        hvad jeg har lavet. Eller gå på <RouterLink to="/Aboutview">opdagelse</RouterLink> i hvem jeg er som person
+      </p>
     </div>
     <div class="main__img">
       <ascii />
@@ -43,7 +49,7 @@ main {
     color: transparent;
 
 
-  } 
+  }
 
   h1 {
     max-width: 50vw;
@@ -53,6 +59,11 @@ main {
     color: var(--white);
   }
 
+}
+
+p {
+  max-width: 32vw;
+  padding: 10px 0;
 }
 
 
@@ -87,6 +98,43 @@ h1 {
   -webkit-text-stroke: 2px transparent;
 }
 
+a {
+  text-decoration: none;
+  color: var(--purple);
+  font-weight: bolder;
+
+  padding: 2px;
+  text-transform: uppercase;
+  animation: myanim2 2s;
+  animation-delay: 1.3s;
+
+  &:nth-child(2) {
+    animation-delay: 1.5s;
+  }
+}
+
+a:hover {
+  animation: myanim 3s;
+
+}
+
+@keyframes myanim {
+  10% {
+    color: var(--white);
+    text-shadow: #ff1493 5px 0px, limegreen -5px 0px;
+
+  }
+
+}
+
+@keyframes myanim2 {
+  10% {
+    color: var(--white);
+    text-shadow: #ff1493 5px 0px, limegreen -5px 0px;
+
+  }
+
+}
 
 
 @media only screen and (max-width: 700px) {
@@ -97,21 +145,29 @@ h1 {
     width: 80vw;
 
     h1 {
-      font-size: 2rem;
+      font-size: 2.3rem;
       max-width: 100%;
       -webkit-text-stroke: .5px white;
       text-align: center;
 
     }
 
+    p {
+      max-width: 80vw;
+      padding: 20px 0;
+    }
+
+
     .main__img {
-      padding: 5vw;
+      padding: 0vw;
+      width: 89vw;
+      overflow: hidden;
     }
 
   }
 
   .gradient-text {
-    font-size: 1.85rem;
+    font-size: 2.1rem;
   }
 
 

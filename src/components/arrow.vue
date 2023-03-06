@@ -15,7 +15,7 @@
     position: relative;
     font-size: 50px;
     font-weight: 300;
-    padding: 10px;
+    padding-right: -20px;
     color: white;
 
     user-select: none;

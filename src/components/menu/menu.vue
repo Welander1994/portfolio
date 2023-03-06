@@ -18,15 +18,14 @@ function openMenu() {
 <template>
     <div>
         <nav :class="classes">
-            <div class="arrow arrow-gone">
+            <div class="arrow">
                 <header__menu />
             </div>
             <div class="menu" :class="{ active: menu }">
                 <RouterLink to="/">Home</RouterLink>
-                <RouterLink to="/WeatherAppView">Weather App</RouterLink>
-                <RouterLink to="/ShoppingView">Shopping list</RouterLink>
                 <RouterLink to="/projectsView">projects</RouterLink>
                 <RouterLink to="/ShoppingView">Kontakt</RouterLink>
+                <RouterLink to="/AboutView">about</RouterLink>
             </div>
             <div class="burger__menu">
                 <burger__menu @mouseup="openMenu()" />
@@ -115,15 +114,6 @@ nav {
         position: relative;
 
         a {
-            background: linear-gradient(60deg, var(--white) 0%, var(--gray) 100%);
-            background-size: 100%;
-            background-repeat: repeat;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            -moz-background-clip: text;
-            -moz-text-fill-color: transparent;
-            -webkit-text-stroke: 2px transparent;
-
             padding: 20px;
             font-size: 26px;
         }
@@ -142,7 +132,7 @@ nav {
             background: linear-gradient(43deg, rgba(20, 20, 20, 1) 0%, rgba(51, 51, 51, 1) 83%);
             box-shadow: 0 0 30px #00000069;
             transition: .5s ease-in;
-
+            transition: all 1000ms cubic-bezier(1, -.22, 0.765, 1);
             position: absolute;
             top: 0;
             left: -100%;

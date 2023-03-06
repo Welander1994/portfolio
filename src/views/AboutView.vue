@@ -2,50 +2,18 @@
 import header__menu from '../components/header__menu.vue';
 import glitchText from '../components/glitchText.vue';
 import menu_bar from '../components/menu/menu.vue'
-import { onMounted } from 'vue';
-
-
-onMounted(() => {
-    const weatherApp = document.getElementById('weatherApp');
-    const ShoppingList = document.getElementById('ShoppingList');
-    const b = document.querySelector('.b');
-
-    weatherApp.onmouseover = () => {
-        b.style.backgroundImage = "url('/src/assets/img/weatherApp.jpg')";
-
-    }
-
-    ShoppingList.onmouseover = () => {
-        b.style.backgroundImage = "url('/src/assets/img/Untitled.jpg')";
-
-    }
-})
-
-
-
-
 
 
 </script>
 
 <template>
-    <div>
-        <div class="navigation">
-            <menu_bar classes="" type="project" />
-        </div>
+    <div class="navigation">
+        <menu_bar classes="" type="project" />
+    </div>
 
-        <div class="box">
-            <div class="main">
-                <glitchText title="Projects" />
-                <div class="menu" :class="{ active: menu }">
-                    <RouterLink id="weatherApp" to="/WeatherAppView">Weather App</RouterLink>
-                    <RouterLink id="ShoppingList" to="/ShoppingView">Shopping list</RouterLink>
-                </div>
-            </div>
-            <div class="main__img b">
+    <div class="box">
+        <glitchText title="Om mig" />
 
-            </div>
-        </div>
 
     </div>
 </template>
@@ -53,7 +21,6 @@ onMounted(() => {
 <style lang="scss" scoped>
 .box {
     display: flex;
-    flex-direction: row;
     margin: 0 2vw 2vw 2vw;
     padding: 30px;
     border: var(--white) 2px solid;
@@ -145,59 +112,6 @@ onMounted(() => {
     }
 
 
-
-}
-
-.main {
-    display: flex;
-    flex-direction: column;
-}
-
-.main__img {
-    width: 45vw;
-    height: 80vh;
-    transition: 1s;
-
-    display: flex;
-    justify-content: center;
-
-
-    padding: 0vw;
-
-    background-position: center;
-    background-repeat: no-repeat;
-
-    filter: opacity(50%);
-
-
-}
-
-.menu {
-    display: flex;
-    flex-direction: column;
-
-    a {
-        text-decoration: none;
-        color: var(--purple);
-        font-weight: bolder;
-        width: fit-content;
-        padding: 10px 0;
-        text-transform: uppercase;
-
-    }
-
-    a:hover {
-        animation: myanim 3s;
-    }
-
-    @keyframes myanim {
-        10% {
-            color: var(--white);
-            text-shadow: #ff1493 5px 0px, limegreen -5px 0px;
-
-        }
-
-    }
 
 }
 

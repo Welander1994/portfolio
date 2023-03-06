@@ -147,6 +147,7 @@ import menu_bar from '../components/menu/menu.vue'
     flex-direction: column;
     max-width: 100vw;
     align-items: center;
+    padding: 30px 30px 0 30px;
 
     .box__content {
       width: 110%;
@@ -175,7 +176,7 @@ import menu_bar from '../components/menu/menu.vue'
 
     .box__img {
       height: auto;
-      padding: 10vh 0;
+      padding: 3vh 0;
       width: 90vw;
     }
   }

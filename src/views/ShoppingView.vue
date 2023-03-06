@@ -3,7 +3,7 @@ import header__menu from '../components/header__menu.vue';
 import glitchText from '../components/glitchText.vue';
 import weatherApp from '../components/weatherApp/weather.vue'
 import menu_bar from '../components/menu/menu.vue'
-import Btn from '../components/button.vue'
+
 </script>
 
 <template>

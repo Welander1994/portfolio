@@ -16,7 +16,7 @@ import arrow from './arrow.vue';
 <style lang="scss" scoped>
 div {
     display: flex;
-    padding: 0 10px;
+    padding: 0;
     justify-content: space-between;
     align-items: center;
 }
