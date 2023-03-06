@@ -14,22 +14,22 @@ const router = createRouter({
             component: HomeView
         },
         {
-            path: '/WeatherAppView',
-            name: 'WeatherAppView',
+            path: '/WeatherApp',
+            name: 'WeatherApp',
             component: WeatherAppView
         },
         {
-            path: '/ShoppingView',
-            name: 'ShoppingView',
+            path: '/Shopping',
+            name: 'Shopping',
             component: ShoppingView
         },
         {
-            path: '/projectsView',
-            name: 'projectsView',
+            path: '/projects',
+            name: 'projects',
             component: projects
         },
         {
-            path: '/AboutView',
+            path: '/About',
             name: 'about',
             component: about
         },

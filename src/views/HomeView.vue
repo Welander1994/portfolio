@@ -14,8 +14,8 @@ import menu_bar from '../components/menu/menu.vue'
       <h1 id="Web__title">Hej, mit navn er </h1>
       <glitchText class="gradient-text" title="Jacob Welander" />
       <p>
-        Studerer Web udvikler på UCL i Odense. Tjek mine <RouterLink to="/projectsView">Projekter</RouterLink> for at se
-        hvad jeg har lavet. Eller gå på <RouterLink to="/Aboutview">opdagelse</RouterLink> i hvem jeg er som person
+        Studerer Web udvikler på UCL i Odense. Tjek mine <RouterLink to="/projects">Projekter</RouterLink> for at se
+        hvad jeg har lavet. Eller gå på <RouterLink to="/About">opdagelse</RouterLink> i hvem jeg er som person
       </p>
     </div>
     <div class="main__img">
@@ -102,10 +102,10 @@ a {
   text-decoration: none;
   color: var(--purple);
   font-weight: bolder;
-
+  transition: .5s;
   padding: 2px;
   text-transform: uppercase;
-  animation: myanim2 2s;
+  animation: myanim 2s;
   animation-delay: 1.3s;
 
   &:nth-child(2) {
@@ -114,7 +114,8 @@ a {
 }
 
 a:hover {
-  animation: myanim 3s;
+  color: var(--white);
+  text-shadow: #ff1493 5px 0px, limegreen -5px 0px;
 
 }
 
@@ -127,14 +128,8 @@ a:hover {
 
 }
 
-@keyframes myanim2 {
-  10% {
-    color: var(--white);
-    text-shadow: #ff1493 5px 0px, limegreen -5px 0px;
 
-  }
 
-}
 
 
 @media only screen and (max-width: 700px) {
@@ -145,7 +140,7 @@ a:hover {
     width: 80vw;
 
     h1 {
-      font-size: 2.3rem;
+      font-size: 2.2rem;
       max-width: 100%;
       -webkit-text-stroke: .5px white;
       text-align: center;
@@ -168,6 +163,7 @@ a:hover {
 
   .gradient-text {
     font-size: 2.1rem;
+    min-width: 82vw;
   }
 
 

@@ -5,7 +5,7 @@ import menu_bar from '../components/menu/menu.vue'
 import { onMounted } from 'vue';
 
 
-onMounted(() => {
+/* onMounted(() => {
     const weatherApp = document.getElementById('weatherApp');
     const ShoppingList = document.getElementById('ShoppingList');
     const b = document.querySelector('.b');
@@ -20,7 +20,7 @@ onMounted(() => {
 
     }
 })
-
+ */
 
 
 
@@ -37,9 +37,11 @@ onMounted(() => {
         <div class="box">
             <div class="main">
                 <glitchText title="Projects" />
+                <p>List af projekter som jeg har arbejde på, både gennem min uddannelse og i min fritid
+                </p>
                 <div class="menu" :class="{ active: menu }">
-                    <RouterLink id="weatherApp" to="/WeatherAppView">Weather App</RouterLink>
-                    <RouterLink id="ShoppingList" to="/ShoppingView">Shopping list</RouterLink>
+                    <RouterLink id="weatherApp" to="/WeatherApp">Weather App</RouterLink>
+                    <RouterLink id="ShoppingList" to="/Shopping">Shopping list</RouterLink>
                 </div>
             </div>
             <div class="main__img b">
@@ -104,12 +106,16 @@ onMounted(() => {
         }
     }
 
-    p,
+
     h2,
     h1 {
         padding: 20px 0 20px 0;
         width: 50vw;
         color: var(--white);
+    }
+
+    p {
+        padding: 0 0 20px 0;
     }
 
 
@@ -155,7 +161,7 @@ onMounted(() => {
 
 .main__img {
     width: 45vw;
-    height: 80vh;
+    max-height: 80vh;
     transition: .5s;
 
     display: flex;
@@ -166,11 +172,6 @@ onMounted(() => {
     background-position: center;
     background-repeat: no-repeat;
     background-clip: border-box;
-
-
-
-
-
 
 }
 
@@ -223,12 +224,13 @@ onMounted(() => {
             width: 110%;
         }
 
-        p,
+
         h2,
         h1 {
             padding: 20px 0;
             width: 90vw;
             color: var(--white);
+            font-size: 32px;
         }
 
         p {

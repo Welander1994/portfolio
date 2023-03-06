@@ -60,6 +60,22 @@ h1 {
     padding: 20px;
     user-select: none;
 
+    /* Create the gradient. */
+    background: linear-gradient(60deg, var(--white) 0%, var(--gray) 100%);
+
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+
+    -webkit-text-stroke: 2px transparent;
+
 }
 
 .text-small {

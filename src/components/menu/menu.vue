@@ -23,9 +23,9 @@ function openMenu() {
             </div>
             <div class="menu" :class="{ active: menu }">
                 <RouterLink to="/">Home</RouterLink>
-                <RouterLink to="/projectsView">projects</RouterLink>
-                <RouterLink to="/ShoppingView">Kontakt</RouterLink>
-                <RouterLink to="/AboutView">about</RouterLink>
+                <RouterLink to="/projects">Projects</RouterLink>
+                <RouterLink to="/Shopping">Kontakt</RouterLink>
+                <RouterLink to="/About">about</RouterLink>
             </div>
             <div class="burger__menu">
                 <burger__menu @mouseup="openMenu()" />
@@ -132,7 +132,7 @@ nav {
             background: linear-gradient(43deg, rgba(20, 20, 20, 1) 0%, rgba(51, 51, 51, 1) 83%);
             box-shadow: 0 0 30px #00000069;
             transition: .5s ease-in;
-            transition: all 1000ms cubic-bezier(1, -.22, 0.765, 1);
+
             position: absolute;
             top: 0;
             left: -100%;
