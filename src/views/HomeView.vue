@@ -30,8 +30,8 @@ main {
   display: flex;
   flex-direction: row;
 
-  margin: 0 2vw 2vw 2vw;
-  padding: 30px;
+  margin: 0 2vw;
+  padding: 10px 30px;
 
   border: var(--white) 2px solid;
   border-color: var(--white) transparent transparent var(--white);
@@ -52,7 +52,7 @@ main {
   }
 
   h1 {
-    max-width: 50vw;
+    width: 45vw;
     font-size: 4rem;
     text-transform: uppercase;
     -webkit-text-stroke: 1px white;

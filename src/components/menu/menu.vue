@@ -22,10 +22,10 @@ function openMenu() {
                 <header__menu />
             </div>
             <div class="menu" :class="{ active: menu }">
-                <RouterLink to="/">Home</RouterLink>
-                <RouterLink to="/projects">Projects</RouterLink>
+                <RouterLink to="/">Hjem</RouterLink>
+                <RouterLink to="/projects">Projekter</RouterLink>
                 <RouterLink to="/Shopping">Kontakt</RouterLink>
-                <RouterLink to="/About">about</RouterLink>
+                <RouterLink to="/About">Om mig</RouterLink>
             </div>
             <div class="burger__menu">
                 <burger__menu @mouseup="openMenu()" />
