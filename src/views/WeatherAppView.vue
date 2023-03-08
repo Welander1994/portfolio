@@ -138,6 +138,9 @@ import menu_bar from '../components/menu/menu.vue'
     color: var(--white);
   }
 
+  nav {
+    margin: 10px 0;
+  }
 
   .box__learn {
 
@@ -208,6 +211,8 @@ import menu_bar from '../components/menu/menu.vue'
     }
 
     nav {
+
+
       ul {
         padding: 20px 0;
         justify-content: space-around;

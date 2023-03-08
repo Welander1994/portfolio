@@ -5,9 +5,9 @@ import arrow from './arrow.vue';
 
 <template>
     <div>
-        <RouterLink to="/">
+        <a onclick="history.go(-1);">
             <arrow />
-        </RouterLink>
+        </a>
 
         <!--   <burger__menu /> -->
     </div>

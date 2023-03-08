@@ -11,7 +11,7 @@ import menu_bar from '../components/menu/menu.vue'
   <menu_bar classes="home" type="project" />
   <main>
     <div class=" main__title">
-      <h1 id="Web__title">Jacob Welander</h1>
+      <!--      <h1 id="Web__title">Jacob Welander</h1> -->
       <glitchText class="gradient-text" title="Web Development Student" />
       <p>
         I'm a web development student at UCL in Odense, and I'm passionate about building engaging and effective
@@ -31,18 +31,18 @@ main {
   display: flex;
   flex-direction: row;
 
-  margin: 0 2vw;
+  margin: 0 2vw 2vw 2vw;
   padding: 10px 30px;
 
   border: var(--white) 2px solid;
   border-color: var(--white) transparent transparent var(--white);
 
-  justify-content: space-around;
+
 
   .main__title {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    padding: 20px 0 20px 0;
     min-width: 40vw;
   }
 
@@ -57,6 +57,7 @@ main {
     font-size: 4rem;
     text-transform: uppercase;
     -webkit-text-stroke: 1px white;
+    padding: 20px 0 20px 0;
     color: var(--white);
   }
 

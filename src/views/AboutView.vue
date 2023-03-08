@@ -15,7 +15,8 @@ import menu_bar from '../components/menu/menu.vue'
         <glitchText title="About me" />
         <hr>
         <p>
-            Hi, I'm Jacob Welander, a 28-year-old web development student based in Odense. I first learned to code
+            Hi, I'm Jacob Welander, a 28-year-old web development student based in Odense, where i live with my girlfriend.
+            I first learned to code
             while studying 3D animation in Grenaa, and have been hooked on web development ever since.
 
             As a web developer, I specialize in <span>Vue.js</span> and <span>JavaScript</span>, and I'm always looking for
@@ -94,6 +95,7 @@ import menu_bar from '../components/menu/menu.vue'
         li {
             margin: 0 20px;
             text-decoration: none;
+            font-weight: 900;
             color: var(--purple);
             padding: 2px;
             text-transform: uppercase;
