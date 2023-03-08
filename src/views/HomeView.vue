@@ -11,11 +11,12 @@ import menu_bar from '../components/menu/menu.vue'
   <menu_bar classes="home" type="project" />
   <main>
     <div class=" main__title">
-      <h1 id="Web__title">Hej, mit navn er </h1>
-      <glitchText class="gradient-text" title="Jacob Welander" />
+      <h1 id="Web__title">Jacob Welander</h1>
+      <glitchText class="gradient-text" title="Web Development Student" />
       <p>
-        Studerer Web udvikler på UCL i Odense. Tjek mine <RouterLink to="/projects">Projekter</RouterLink> for at se
-        hvad jeg har lavet. Eller gå på <RouterLink to="/About">opdagelse</RouterLink> i hvem jeg er som person
+        I'm a web development student at UCL in Odense, and I'm passionate about building engaging and effective
+        websites. Take a look at my <RouterLink to="/projects">projects</RouterLink> to see some examples of my work, or
+        get to know <RouterLink to="/About">me</RouterLink> better as a person.
       </p>
     </div>
     <div class="main__img">
@@ -106,10 +107,10 @@ a {
   padding: 2px;
   text-transform: uppercase;
   animation: myanim 2s;
-  animation-delay: 1.3s;
+  animation-delay: 2s;
 
   &:nth-child(2) {
-    animation-delay: 1.5s;
+    animation-delay: 2.3s;
   }
 }
 

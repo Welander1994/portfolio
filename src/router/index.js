@@ -15,7 +15,7 @@ const router = createRouter({
         },
         {
             path: '/WeatherApp',
-            name: 'WeatherApp',
+            name: 'weatherApp',
             component: WeatherAppView
         },
         {
@@ -24,7 +24,7 @@ const router = createRouter({
             component: ShoppingView
         },
         {
-            path: '/projects',
+            path: '/Projects',
             name: 'projects',
             component: projects
         },
