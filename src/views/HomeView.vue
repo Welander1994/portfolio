@@ -137,15 +137,14 @@ a:hover {
 
   main {
     flex-direction: column;
-
+    padding: 20px 30px;
     width: 80vw;
-    height: calc(85vh - 70px);
+    height: calc(88dvh - 70px);
 
     h1 {
-      font-size: 2.2rem;
-      max-width: 100%;
+      font-size: 2rem;
+      width: 80vw;
       -webkit-text-stroke: .5px white;
-      text-align: center;
 
     }
 
@@ -164,16 +163,16 @@ a:hover {
   }
 
   .gradient-text {
-    font-size: 2.1rem;
-    min-width: 82vw;
+    font-size: 1.8rem;
+
   }
 
 
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 200px) {
   h1 {
-    font-size: 2rem !important;
+    font-size: 2rem;
   }
 }
 </style>

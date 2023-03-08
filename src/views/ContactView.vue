@@ -12,36 +12,9 @@ import menu_bar from '../components/menu/menu.vue'
     </div>
 
     <div class="box">
-        <glitchText title="About me" />
+        <glitchText title="Contact" />
         <hr>
-        <p>
-            Hi, I'm Jacob Welander, a 28-year-old web development student based in Odense. I first learned to code
-            while studying 3D animation in Grenaa, and have been hooked on web development ever since.
 
-            As a web developer, I specialize in <span>Vue.js</span> and <span>JavaScript</span>, and I'm always looking for
-            new challenges and
-            opportunities to learn. I believe that collaboration and community are key to success in any field.
-        </p>
-        <p>
-            In my free time, I love to watch movies and play video games. I find that they inspire my creativity and help me
-            stay up-to-date on the latest trends in design and technology. But I also know the importance of staying active,
-            which is why I make time for the gym and outdoor activities like hiking and soccer.
-        </p>
-        <h3>Programs and Tools I Use</h3>
-        <ul>
-            <li>Html/scss</li>
-            <li>JavaScript</li>
-            <li>Vuejs 3</li>
-            <li>SQL</li>
-            <li>API</li>
-            <li>Postman</li>
-            <li>PWA</li>
-        </ul>
-        <p>
-            Thanks for visiting my portfolio, and feel free to <RouterLink to="/contact">reach out</RouterLink> if you have
-            any questions or are interested in
-            collaborating!
-        </p>
 
     </div>
 </template>
@@ -54,7 +27,6 @@ import menu_bar from '../components/menu/menu.vue'
     padding: 30px;
     border: var(--white) 2px solid;
     border-color: var(--white) transparent transparent var(--white);
-
 
 
     hr {
@@ -89,7 +61,6 @@ import menu_bar from '../components/menu/menu.vue'
         display: flex;
         flex-direction: column;
         width: 30vw;
-        list-style: circle;
 
         li {
             margin: 0 20px;
@@ -144,7 +115,6 @@ import menu_bar from '../components/menu/menu.vue'
 
 
 
-
         hr {
             max-width: 80vw;
             margin: 0 0 10px 0;
@@ -165,7 +135,6 @@ import menu_bar from '../components/menu/menu.vue'
 
         nav {
             ul {
-
                 padding: 20px 0;
                 justify-content: space-around;
                 align-items: center;

@@ -14,16 +14,21 @@ import menu_bar from '../components/menu/menu.vue'
   <div class="box">
     <div class="box__content">
       <glitchText title="Weather api" />
+      <hr>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste facilis amet dicta quod deserunt modi,
-        necessitatibus at iure quibusdam officia voluptate fugit voluptatem eligendi! Pariatur veritatis reiciendis
-        excepturi magni error?
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste facilis amet dicta quod deserunt modi,
-        necessitatibus at iure quibusdam officia voluptate fugit voluptatem eligendi! Pariatur veritatis reiciendis
-        excepturi magni error?
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste facilis amet dicta quod deserunt modi,
-        necessitatibus at iure quibusdam officia voluptate fugit voluptatem eligendi! Pariatur veritatis reiciendis
-        excepturi magni error?
+        For this project, I developed a sleek and modern weather app using Vue.js 3 and OpenWeather API. With this app,
+        users can quickly and easily check the current weather conditions for any location in the world.
+      </p>
+      <p>
+        To enhance the user experience, I designed and implemented a series of Vue components with CSS animations that
+        correspond to different weather types. For example, the component for rainy weather features a subtle raindrop
+        animation, see if you can find all the different weather types.
+        I also optimized the app for mobile devices, ensuring that it's fully responsive and easy to use on any screen
+        size.
+      </p>
+      <p>
+        Overall, I'm proud of the work I've done on this project, and I'm excited to continue exploring new ways to
+        incorporate dynamic animations and responsive design into my web development work.
       </p>
 
       <nav>
@@ -99,7 +104,33 @@ import menu_bar from '../components/menu/menu.vue'
     }
   }
 
-  p,
+  hr {
+    border-color: var(--gray);
+    max-width: 40vw;
+  }
+
+  p {
+    padding: 10px 0;
+    max-width: 40vw;
+
+    a {
+      text-decoration: none;
+      color: var(--purple);
+      font-weight: bolder;
+      transition: .5s;
+      padding: 2px;
+      text-transform: uppercase;
+      animation: myanim 2s;
+      animation-delay: 2s;
+
+      &:hover {
+        color: var(--white);
+        text-shadow: #ff1493 5px 0px, limegreen -5px 0px
+      }
+    }
+
+  }
+
   h2,
   h1 {
     padding: 20px 0 20px 0;
@@ -117,6 +148,11 @@ import menu_bar from '../components/menu/menu.vue'
     li {
       padding: 5px 0;
       margin-left: 20px;
+      margin: 0 20px;
+      text-decoration: none;
+      color: var(--purple);
+      padding: 2px;
+      text-transform: uppercase;
 
       span {
         font-weight: 900;
@@ -153,17 +189,22 @@ import menu_bar from '../components/menu/menu.vue'
       width: 110%;
     }
 
-    p,
+    hr {
+      max-width: 80vw;
+      margin: 0 0 10px 0;
+    }
+
     h2,
     h1 {
       padding: 20px 0;
       width: 90vw;
-      color: var(--white);
+      color: var(--gray);
     }
 
     p {
-      width: 100%;
-      padding: 0 0 20px 0;
+      max-width: none;
+
+      padding: 0 0 10px 0;
     }
 
     nav {

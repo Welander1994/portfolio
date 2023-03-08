@@ -4,6 +4,7 @@ import WeatherAppView from '../views/WeatherAppView.vue';
 import ShoppingView from '../views/ShoppingView.vue';
 import projects from '../views/projectsView.vue';
 import about from '../views/AboutView.vue';
+import contact from '../views/ContactView.vue'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -33,6 +34,12 @@ const router = createRouter({
             name: 'about',
             component: about
         },
+        {
+            path: '/Contact',
+            name: 'contact',
+            component: contact
+        },
+
     ]
 })
 

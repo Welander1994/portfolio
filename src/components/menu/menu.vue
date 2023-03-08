@@ -25,7 +25,7 @@ function openMenu() {
                 <RouterLink to="/">Home</RouterLink>
                 <RouterLink to="/Projects">Projekter</RouterLink>
                 <RouterLink to="/About">About</RouterLink>
-                <RouterLink to="/Shopping">Contact</RouterLink>
+                <RouterLink to="/Contact">Contact</RouterLink>
             </div>
             <div class="burger__menu">
                 <burger__menu @mouseup="openMenu()" />
@@ -131,7 +131,7 @@ nav {
             background: rgb(20, 20, 20);
             background: linear-gradient(43deg, rgba(20, 20, 20, 1) 0%, rgba(51, 51, 51, 1) 83%);
             box-shadow: 0 0 30px #00000069;
-            transition: .5s ease-in;
+            transition: .2s ease-in;
 
             position: absolute;
             top: 0;

@@ -37,11 +37,17 @@ import { onMounted } from 'vue';
         <div class="box">
             <div class="main">
                 <glitchText title="Projects" />
-                <p>List af projekter som jeg har arbejde på, både gennem min uddannelse og i min fritid
+                <hr>
+                <p>
+                    Here, you'll find a selection of projects I've worked on throughout my time as a web developer. From
+                    custom websites to interactive web applications, these projects showcase my skills in design,
+                    development.
                 </p>
                 <div class="menu" :class="{ active: menu }">
+
                     <RouterLink id="weatherApp" to="/WeatherApp">Weather App</RouterLink>
                     <RouterLink id="ShoppingList" to="/Shopping">Shopping list</RouterLink>
+
                 </div>
             </div>
             <div class="main__img b">
@@ -55,11 +61,49 @@ import { onMounted } from 'vue';
 <style lang="scss" scoped>
 .box {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 0 2vw 2vw 2vw;
     padding: 30px;
     border: var(--white) 2px solid;
     border-color: var(--white) transparent transparent var(--white);
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+
+        a {
+            text-decoration: none;
+            color: var(--purple);
+            font-weight: bolder;
+            width: fit-content;
+            padding: 10px 0;
+            text-transform: uppercase;
+            transition: .5s;
+            font-size: 24px;
+            animation: myanim 2s;
+            animation-delay: .8s;
+
+            &:nth-child(2) {
+                animation-delay: 1s;
+            }
+        }
+
+
+        a:hover {
+            color: var(--white);
+            text-shadow: #ff1493 5px 0px, limegreen -5px 0px;
+        }
+
+        @keyframes myanim {
+            10% {
+                color: var(--white);
+                text-shadow: #ff1493 5px 0px, limegreen -5px 0px;
+
+            }
+
+        }
+
+    }
 
     .links {
         display: flex;
@@ -106,16 +150,62 @@ import { onMounted } from 'vue';
         }
     }
 
+    hr {
+        border-color: var(--gray);
+        max-width: 40vw;
+    }
+
+    p {
+        padding: 10px 0;
+        max-width: 40vw;
+
+        a {
+            text-decoration: none;
+            color: var(--purple);
+            font-weight: bolder;
+            transition: .5s;
+            padding: 2px;
+            text-transform: uppercase;
+            animation: myanim 2s;
+            animation-delay: 2s;
+
+            &:hover {
+                color: var(--white);
+                text-shadow: #ff1493 5px 0px, limegreen -5px 0px
+            }
+        }
+
+    }
+
+    ul {
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        width: 30vw;
+
+        li {
+            margin: 0 20px;
+            text-decoration: none;
+            color: var(--purple);
+            padding: 2px;
+            text-transform: uppercase;
+        }
+    }
+
+    span {
+        text-decoration: none;
+        color: var(--purple);
+        font-weight: bolder;
+        padding: 2px;
+        text-transform: uppercase;
+    }
+
 
     h2,
     h1 {
         padding: 20px 0 20px 0;
         width: 50vw;
         color: var(--white);
-    }
-
-    p {
-        padding: 0 0 20px 0;
     }
 
 
@@ -152,64 +242,6 @@ import { onMounted } from 'vue';
 
 
 
-}
-
-.main {
-    display: flex;
-    flex-direction: column;
-}
-
-.main__img {
-    width: 45vw;
-    max-height: 80vh;
-    transition: .5s;
-
-    display: flex;
-    justify-content: center;
-
-    filter: opacity(50%);
-    padding: 0vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-clip: border-box;
-
-}
-
-.menu {
-    display: flex;
-    flex-direction: column;
-
-    a {
-        text-decoration: none;
-        color: var(--purple);
-        font-weight: bolder;
-        width: fit-content;
-        padding: 10px 0;
-        text-transform: uppercase;
-        transition: .5s;
-        font-size: 24px;
-        animation: myanim 2s;
-        animation-delay: .8s;
-
-        &:nth-child(2) {
-            animation-delay: 1s;
-        }
-    }
-
-
-    a:hover {
-        color: var(--white);
-        text-shadow: #ff1493 5px 0px, limegreen -5px 0px;
-    }
-
-    @keyframes myanim {
-        10% {
-            color: var(--white);
-            text-shadow: #ff1493 5px 0px, limegreen -5px 0px;
-
-        }
-
-    }
 
 }
 
@@ -218,24 +250,29 @@ import { onMounted } from 'vue';
 
         flex-direction: column;
         max-width: 100vw;
-        align-items: center;
+
 
         .box__content {
             width: 110%;
         }
 
 
+        hr {
+            max-width: 80vw;
+            margin: 0 0 10px 0;
+        }
+
         h2,
         h1 {
             padding: 20px 0;
             width: 90vw;
             color: var(--white);
-            font-size: 32px;
         }
 
         p {
-            width: 100%;
-            padding: 0 0 20px 0;
+            max-width: none;
+
+            padding: 0 0 10px 0;
         }
 
         nav {
