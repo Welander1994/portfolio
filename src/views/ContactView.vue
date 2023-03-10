@@ -1,5 +1,5 @@
 <script setup>
-import header__menu from '../components/header__menu.vue';
+
 import glitchText from '../components/glitchText.vue';
 import menu_bar from '../components/menu/menu.vue'
 import hr_ from '../components/hr.vue';

@@ -1,5 +1,5 @@
 <script setup>
-import header__menu from '../components/header__menu.vue';
+
 import glitchText from '../components/glitchText.vue';
 import menu_bar from '../components/menu/menu.vue'
 import hr_ from '../components/hr.vue';
@@ -48,6 +48,19 @@ import hr_ from '../components/hr.vue';
                 <li>3ds max</li>
             </ul>
         </div>
+        <div class="Some">
+            <header>
+                <a href="https://github.com/Welander1994?tab=repositories" target="_blank">
+                    <img src="../assets/img/GitHub_Logo_White.png" alt="github">
+                </a>
+                <a href="https://www.linkedin.com/in/jacob-welander-776b03105/" target="_blank">
+                    <img src="../assets/img/LinkedIn_Logo_2019.png" alt="github">
+                </a>
+                <a href="../assets/document/CV - Jacob Welander Jensen.pdf" download>
+                    <img src="../assets/img/CV.png" alt="github">
+                </a>
+            </header>
+        </div>
 
         <p>
             Thanks for visiting my portfolio, and feel free to <RouterLink to="/contact">reach out</RouterLink> if you have
@@ -67,6 +80,23 @@ import hr_ from '../components/hr.vue';
     border: var(--white) 2px solid;
     border-color: var(--white) transparent transparent var(--white);
 
+    img {
+        width: 90px;
+        align-items: center;
+        height: 40px;
+        padding: 5px 30px;
+        margin: 0 20px 0 0;
+        border-radius: 25px;
+        object-fit: contain;
+        box-shadow: 5px 5px 13px 0px rgb(0 0 0 / 59%);
+        -webkit-box-shadow: 5px 5px 13px 0px rgb(0 0 0 / 59%);
+        -moz-box-shadow: 5px 5px 13px 0px rgba(0, 0, 0, 0.59);
+        transition: .3s ease-in-out;
+
+        &:hover {
+            background-color: var(--purple);
+        }
+    }
 
     .skills {
         display: flex;
@@ -101,7 +131,7 @@ import hr_ from '../components/hr.vue';
         a {
             text-decoration: none;
             color: var(--purple);
-            font-weight: bolder;
+            font-weight: 900;
             transition: .5s;
             padding: 2px;
             text-transform: uppercase;
@@ -121,7 +151,7 @@ import hr_ from '../components/hr.vue';
     span {
         text-decoration: none;
         color: var(--purple);
-        font-weight: bolder;
+        font-weight: 900;
         padding: 2px;
         text-transform: uppercase;
     }

@@ -1,5 +1,5 @@
 <script setup>
-import header__menu from '../components/header__menu.vue';
+
 import glitchText from '../components/glitchText.vue';
 import weatherApp from '../components/weatherApp/weather.vue';
 import menu_bar from '../components/menu/menu.vue';
@@ -17,11 +17,13 @@ import hr_ from '../components/hr.vue';
       <glitchText title="Weather api" />
       <hr_ />
       <p>
-        For this project, I developed a sleek and modern weather app using Vue.js 3 and OpenWeather API. With this app,
+        For this project, I developed a sleek and modern weather app using <span>Vue.js 3</span> and <span>OpenWeather
+          API</span>. With this app,
         users can quickly and easily check the current weather conditions for any location in the world.
       </p>
       <p>
-        To enhance the user experience, I designed and implemented a series of Vue components with CSS animations that
+        To enhance the user experience, I designed and implemented a series of Vue components with <span>CSS
+          animations</span> that
         correspond to different weather types. For example, the component for rainy weather features a subtle raindrop
         animation, see if you can find all the different weather types.
         I also optimized the app for mobile devices, ensuring that it's fully responsive and easy to use on any screen
@@ -99,7 +101,7 @@ import hr_ from '../components/hr.vue';
         transition: .3s ease-in-out;
 
         &:hover {
-          background-color: rgba(255, 255, 255, 0.13);
+          background-color: var(--purple);
         }
       }
     }
@@ -125,6 +127,14 @@ import hr_ from '../components/hr.vue';
         color: var(--white);
         text-shadow: #ff1493 5px 0px, limegreen -5px 0px
       }
+    }
+
+    span {
+      text-decoration: none;
+      color: var(--purple);
+      font-weight: 900;
+      padding: 2px;
+      text-transform: uppercase;
     }
 
   }

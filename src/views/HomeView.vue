@@ -12,7 +12,7 @@ import menu_bar from '../components/menu/menu.vue'
   <main>
     <div class=" main__title">
       <!--      <h1 id="Web__title">Jacob Welander</h1> -->
-      <glitchText class="gradient-text" title="Web Development Student" />
+      <glitchText class="gradient-text" title="Web Developer Student" />
       <p>
         I'm a web development student at UCL in Odense, and I'm passionate about building engaging and effective
         websites. Take a look at my <RouterLink to="/projects">projects</RouterLink> to see some examples of my work, or
@@ -42,7 +42,7 @@ main {
   .main__title {
     display: flex;
     flex-direction: column;
-    padding: 20px 0 20px 0;
+    padding: 20px 0;
     min-width: 40vw;
   }
 
@@ -53,11 +53,11 @@ main {
   }
 
   h1 {
+    min-width: 45vw;
     width: 45vw;
-    font-size: 4rem;
+    font-size: 3.6rem;
     text-transform: uppercase;
     -webkit-text-stroke: 1px white;
-    padding: 20px 0 20px 0;
     color: var(--white);
   }
 
@@ -103,7 +103,7 @@ h1 {
 a {
   text-decoration: none;
   color: var(--purple);
-  font-weight: bolder;
+  font-weight: 900;
   transition: .5s;
   padding: 2px;
   text-transform: uppercase;
@@ -142,9 +142,13 @@ a:hover {
     width: 80vw;
     height: calc(88dvh - 70px);
 
+    .main__title {
+      padding: 0;
+    }
+
     h1 {
-      font-size: 2rem;
-      width: 80vw;
+      font-size: 3rem;
+      width: 85vw;
       -webkit-text-stroke: .5px white;
 
     }
@@ -164,7 +168,7 @@ a:hover {
   }
 
   .gradient-text {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
 
   }
 
@@ -173,7 +177,7 @@ a:hover {
 
 @media only screen and (max-width: 200px) {
   h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
 </style>

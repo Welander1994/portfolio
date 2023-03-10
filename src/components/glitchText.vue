@@ -55,7 +55,7 @@ onMounted(() => {
 @import '../assets/main.css';
 
 h1 {
-    font-size: 4rem;
+    font-size: 3.6rem;
     color: var(--white);
     padding: 20px;
     user-select: none;
@@ -84,7 +84,7 @@ h1 {
 
 @media screen and (max-width: 480px) {
     h1 {
-        font-size: 2rem;
+        font-size: 3rem;
 
     }
 }

@@ -1,5 +1,5 @@
 <script setup>
-import arrow from './arrow.vue';
+import arrow from '../menu/arrow.vue';
 
 </script>
 

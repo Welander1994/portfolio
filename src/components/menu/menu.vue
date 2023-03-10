@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 import burger__menu from './burger__menu.vue';
-import header__menu from '../header__menu.vue';
+import header__menu from '../menu/header__menu.vue';
 
 defineProps({
     classes: String
@@ -59,22 +59,11 @@ nav {
         text-decoration: none;
         color: var(--white);
         padding: 0 20px;
-
+        transition: .5s;
     }
 
     a:hover {
-
-
-        animation: myanim 5s infinite;
-
-        @keyframes myanim {
-            10% {
-                text-shadow: #ff1493 5px 0px, limegreen -5px 0px;
-
-            }
-
-        }
-
+        text-shadow: #ff1493 5px 0px, limegreen -5px 0px;
     }
 
     .burger__menu {
@@ -115,7 +104,16 @@ nav {
 
         a {
             padding: 20px;
-            font-size: 26px;
+            font-size: 2rem;
+            background-color: red;
+            background: linear-gradient(60deg, var(--white) 0%, var(--gray) 100%);
+            background-size: 100%;
+            background-repeat: repeat;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-background-clip: text;
+            -moz-text-fill-color: transparent;
+            -webkit-text-stroke: 2px transparent;
         }
 
         .burger__menu {

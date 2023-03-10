@@ -1,5 +1,5 @@
 <script setup>
-import header__menu from '../components/header__menu.vue';
+
 import glitchText from '../components/glitchText.vue';
 import menu_bar from '../components/menu/menu.vue';
 import hr_ from '../components/hr.vue';
@@ -192,7 +192,7 @@ import { onMounted } from 'vue';
     span {
         text-decoration: none;
         color: var(--purple);
-        font-weight: bolder;
+        font-weight: 900;
         padding: 2px;
         text-transform: uppercase;
     }

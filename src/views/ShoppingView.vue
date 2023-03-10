@@ -1,7 +1,6 @@
 <script setup>
-import header__menu from '../components/header__menu.vue';
+
 import glitchText from '../components/glitchText.vue';
-import weatherApp from '../components/weatherApp/weather.vue'
 import menu_bar from '../components/menu/menu.vue'
 import hr_ from '../components/hr.vue';
 
@@ -17,15 +16,24 @@ import hr_ from '../components/hr.vue';
       <glitchText title="Shopping list app" />
       <hr_ />
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste facilis amet dicta quod deserunt modi,
-        necessitatibus at iure quibusdam officia voluptate fugit voluptatem eligendi! Pariatur veritatis reiciendis
-        excepturi magni error?
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste facilis amet dicta quod deserunt modi,
-        necessitatibus at iure quibusdam officia voluptate fugit voluptatem eligendi! Pariatur veritatis reiciendis
-        excepturi magni error?
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste facilis amet dicta quod deserunt modi,
-        necessitatibus at iure quibusdam officia voluptate fugit voluptatem eligendi! Pariatur veritatis reiciendis
-        excepturi magni error?
+        The ShoppingList <span>PWA</span> is a full-stack web application that I developed using <span>Vue.js</span> and
+        <span>LocalStorage</span>.
+        This project
+        was primarily intended as a means for me to enhance my Vue.js skills and gain more experience with data handling
+        in web development.
+      </p>
+      <p>
+        To create this application, I started by developing a clear and concise user interface that would enable users to
+        easily manage their shopping lists. The use of Vue.js allowed me to create a highly responsive and dynamic
+        interface that reacts quickly to user actions. I also made use of CSS to design a modern and aesthetically
+        pleasing layout.
+      </p>
+      <p>
+        One of the key features of this application is its use of LocalStorage, which enabled me to store
+        user data
+        securely and reliably on their devices. This feature ensures that users can access their shopping lists even after
+        closing the application or restarting their device. The data is encrypted and stored locally, providing users with
+        a high level of privacy and security.
       </p>
       <Btn />
       <nav>
@@ -106,7 +114,7 @@ import hr_ from '../components/hr.vue';
         transition: .3s ease-in-out;
 
         &:hover {
-          background-color: rgba(255, 255, 255, 0.13);
+          background-color: var(--purple);
         }
 
       }
@@ -131,6 +139,14 @@ import hr_ from '../components/hr.vue';
         color: var(--white);
         text-shadow: #ff1493 5px 0px, limegreen -5px 0px
       }
+    }
+
+    span {
+      text-decoration: none;
+      color: var(--purple);
+      font-weight: 900;
+      padding: 2px;
+      text-transform: uppercase;
     }
 
   }
