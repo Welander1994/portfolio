@@ -5,7 +5,7 @@ import arrow from './arrow.vue';
 
 <template>
     <div>
-        <a onclick="history.go(-1);">
+        <a href="#" onclick="history.go(-1);">
             <arrow />
         </a>
 

@@ -26,18 +26,29 @@ import hr_ from '../components/hr.vue';
         <p>
             In my free time, I love to watch movies and play video games. I find that they inspire my creativity and help me
             stay up-to-date on the latest trends in design and technology. But I also know the importance of staying active,
-            which is why I make time for the gym and outdoor activities like hiking and soccer.
+            which is why I make time for the gym.
         </p>
         <h3>Programs and Tools I Use</h3>
-        <ul>
-            <li>Html/scss</li>
-            <li>JavaScript</li>
-            <li>Vuejs 3</li>
-            <li>SQL</li>
-            <li>API</li>
-            <li>Postman</li>
-            <li>PWA</li>
-        </ul>
+        <div class="skills">
+            <ul>
+                <li>Html/scss</li>
+                <li>JavaScript</li>
+                <li>Vuejs 3</li>
+                <li>git</li>
+                <li>SQL</li>
+                <li>mongoDB</li>
+                <li>API</li>
+                <li>Postman</li>
+
+                <li>Wordpress</li>
+                <li>elementor</li>
+                <li>Photoshop</li>
+                <li>Illustrator</li>
+                <li>Indesign</li>
+                <li>3ds max</li>
+            </ul>
+        </div>
+
         <p>
             Thanks for visiting my portfolio, and feel free to <RouterLink to="/contact">reach out</RouterLink> if you have
             any questions or are interested in
@@ -52,16 +63,36 @@ import hr_ from '../components/hr.vue';
     display: flex;
     flex-direction: column;
     margin: 0 2vw 2vw 2vw;
-    padding: 30px;
+    padding: 0 30px;
     border: var(--white) 2px solid;
     border-color: var(--white) transparent transparent var(--white);
 
 
+    .skills {
+        display: flex;
+        flex-direction: row;
 
-    hr {
-        border-color: var(--gray);
-        max-width: 40vw;
+        ul {
+            max-height: 200px;
+            flex-wrap: wrap;
+
+            padding: 10px 0;
+            display: flex;
+            flex-direction: column;
+            width: 25vw;
+            list-style: circle;
+
+            li {
+                margin: 0 20px;
+                text-decoration: none;
+                font-weight: 900;
+                color: var(--purple);
+                padding: 2px;
+                text-transform: uppercase;
+            }
+        }
     }
+
 
     p {
         padding: 10px 0;
@@ -85,22 +116,7 @@ import hr_ from '../components/hr.vue';
 
     }
 
-    ul {
-        padding: 10px 0;
-        display: flex;
-        flex-direction: column;
-        width: 30vw;
-        list-style: circle;
 
-        li {
-            margin: 0 20px;
-            text-decoration: none;
-            font-weight: 900;
-            color: var(--purple);
-            padding: 2px;
-            text-transform: uppercase;
-        }
-    }
 
     span {
         text-decoration: none;
@@ -145,13 +161,6 @@ import hr_ from '../components/hr.vue';
         max-width: 100vw;
 
 
-
-
-        hr {
-            max-width: 80vw;
-            margin: 0 0 10px 0;
-        }
-
         h2,
         h1 {
             padding: 20px 0;
@@ -171,8 +180,25 @@ import hr_ from '../components/hr.vue';
                 padding: 20px 0;
                 justify-content: space-around;
                 align-items: center;
+
             }
         }
+
+        .skills {
+            display: flex;
+            flex-direction: row;
+
+
+            ul {
+                width: 90vw;
+                align-content: space-between;
+
+                li {
+                    margin: 1px 18px;
+                }
+            }
+        }
+
 
     }
 }

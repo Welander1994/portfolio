@@ -17,7 +17,7 @@ hr {
 
 @media only screen and (max-width: 700px) {
     hr {
-        max-width: 80vw;
+        width: 80vw;
         margin: 0 0 10px 0;
     }
 

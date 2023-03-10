@@ -69,7 +69,7 @@ import hr_ from '../components/hr.vue';
   display: flex;
 
   margin: 0 2vw 2vw 2vw;
-  padding: 30px;
+  padding: 0 30px;
   border: var(--white) 2px solid;
   border-color: var(--white) transparent transparent var(--white);
 
@@ -184,7 +184,7 @@ import hr_ from '../components/hr.vue';
     flex-direction: column;
     max-width: 100vw;
     align-items: center;
-    padding: 30px 30px 0 30px;
+    padding: 0 30px;
 
     .box__content {
       width: 110%;
@@ -217,7 +217,7 @@ import hr_ from '../components/hr.vue';
 
     .box__img {
       height: auto;
-      padding: 3vh 0;
+      padding: 4vh 0;
       width: 90vw;
     }
   }

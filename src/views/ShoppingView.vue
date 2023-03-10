@@ -63,7 +63,7 @@ import hr_ from '../components/hr.vue';
   display: flex;
 
   margin: 0 2vw 2vw 2vw;
-  padding: 30px;
+  padding: 0 30px;
   border: var(--white) 2px solid;
   border-color: var(--white) transparent transparent var(--white);
 
@@ -194,7 +194,7 @@ import hr_ from '../components/hr.vue';
       width: 110%;
     }
 
-    p,
+
     h2,
     h1 {
       padding: 20px 0;
@@ -203,7 +203,8 @@ import hr_ from '../components/hr.vue';
     }
 
     p {
-      width: 100%;
+      width: 90vw;
+      max-width: none;
       padding: 0 0 20px 0;
     }
 

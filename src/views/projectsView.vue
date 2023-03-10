@@ -64,7 +64,7 @@ import { onMounted } from 'vue';
     display: flex;
     flex-direction: column;
     margin: 0 2vw 2vw 2vw;
-    padding: 30px;
+    padding: 0 30px;
     border: var(--white) 2px solid;
     border-color: var(--white) transparent transparent var(--white);
 
