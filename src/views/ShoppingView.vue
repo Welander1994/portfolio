@@ -3,6 +3,7 @@ import header__menu from '../components/header__menu.vue';
 import glitchText from '../components/glitchText.vue';
 import weatherApp from '../components/weatherApp/weather.vue'
 import menu_bar from '../components/menu/menu.vue'
+import hr_ from '../components/hr.vue';
 
 </script>
 
@@ -14,6 +15,7 @@ import menu_bar from '../components/menu/menu.vue'
   <div class="box">
     <div class="box__content">
       <glitchText title="Shopping list app" />
+      <hr_ />
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste facilis amet dicta quod deserunt modi,
         necessitatibus at iure quibusdam officia voluptate fugit voluptatem eligendi! Pariatur veritatis reiciendis
@@ -35,6 +37,7 @@ import menu_bar from '../components/menu/menu.vue'
           </li>
           <li>
             <a id="shopping__img" href="https://we-lander.dk/ShoppingList/" target="_blank">
+              <img src="../assets/img/shoppingCart.png" alt="github">
             </a>
           </li>
         </ul>
@@ -73,9 +76,9 @@ import menu_bar from '../components/menu/menu.vue'
       display: flex;
       align-items: center;
 
-
+      /* 
       #shopping__img {
-        background-image: url('../assets/img/icon-192x192.png');
+        background-image: url('../assets/img/shoppingCart.png');
         background-position: center;
         background-size: 40%;
         background-repeat: no-repeat;
@@ -88,11 +91,12 @@ import menu_bar from '../components/menu/menu.vue'
         box-shadow: 5px 5px 13px 0px rgb(0 0 0 / 59%);
         -webkit-box-shadow: 5px 5px 13px 0px rgb(0 0 0 / 59%);
         -moz-box-shadow: 5px 5px 13px 0px rgba(0, 0, 0, 0.59);
-      }
+      } */
 
       img {
         width: 90px;
         align-items: center;
+        object-fit: contain;
         max-height: 45px;
         padding: 5px 30px;
         border-radius: 25px;
@@ -109,7 +113,28 @@ import menu_bar from '../components/menu/menu.vue'
     }
   }
 
-  p,
+  p {
+    padding: 10px 0;
+    max-width: 40vw;
+
+    a {
+      text-decoration: none;
+      color: var(--purple);
+      font-weight: bolder;
+      transition: .5s;
+      padding: 2px;
+      text-transform: uppercase;
+      animation: myanim 2s;
+      animation-delay: 2s;
+
+      &:hover {
+        color: var(--white);
+        text-shadow: #ff1493 5px 0px, limegreen -5px 0px
+      }
+    }
+
+  }
+
   h2,
   h1 {
     padding: 20px 0 20px 0;
@@ -127,6 +152,11 @@ import menu_bar from '../components/menu/menu.vue'
     li {
       padding: 5px 0;
       margin-left: 20px;
+      margin: 0 20px;
+      text-decoration: none;
+      color: var(--purple);
+      padding: 2px;
+      text-transform: uppercase;
 
       span {
         font-weight: 900;

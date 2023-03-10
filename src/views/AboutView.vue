@@ -2,7 +2,7 @@
 import header__menu from '../components/header__menu.vue';
 import glitchText from '../components/glitchText.vue';
 import menu_bar from '../components/menu/menu.vue'
-
+import hr_ from '../components/hr.vue';
 
 </script>
 
@@ -13,7 +13,7 @@ import menu_bar from '../components/menu/menu.vue'
 
     <div class="box">
         <glitchText title="About me" />
-        <hr>
+        <hr_ />
         <p>
             Hi, I'm Jacob Welander, a 28-year-old web development student based in Odense, where i live with my girlfriend.
             I first learned to code

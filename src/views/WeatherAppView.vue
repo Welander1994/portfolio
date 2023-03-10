@@ -1,8 +1,9 @@
 <script setup>
 import header__menu from '../components/header__menu.vue';
 import glitchText from '../components/glitchText.vue';
-import weatherApp from '../components/weatherApp/weather.vue'
-import menu_bar from '../components/menu/menu.vue'
+import weatherApp from '../components/weatherApp/weather.vue';
+import menu_bar from '../components/menu/menu.vue';
+import hr_ from '../components/hr.vue';
 
 </script>
 
@@ -14,7 +15,7 @@ import menu_bar from '../components/menu/menu.vue'
   <div class="box">
     <div class="box__content">
       <glitchText title="Weather api" />
-      <hr>
+      <hr_ />
       <p>
         For this project, I developed a sleek and modern weather app using Vue.js 3 and OpenWeather API. With this app,
         users can quickly and easily check the current weather conditions for any location in the world.
@@ -40,7 +41,7 @@ import menu_bar from '../components/menu/menu.vue'
           </li>
           <li>
             <a href="https://openweathermap.org/" target="_blank">
-              <img src="../assets/img/GitHub_Logo_White.png" alt="github">
+              <img src="../assets/img/logo_white_cropped.png" alt="github">
             </a>
           </li>
         </ul>
@@ -104,10 +105,7 @@ import menu_bar from '../components/menu/menu.vue'
     }
   }
 
-  hr {
-    border-color: var(--gray);
-    max-width: 40vw;
-  }
+
 
   p {
     padding: 10px 0;
@@ -192,10 +190,7 @@ import menu_bar from '../components/menu/menu.vue'
       width: 110%;
     }
 
-    hr {
-      max-width: 80vw;
-      margin: 0 0 10px 0;
-    }
+
 
     h2,
     h1 {

@@ -2,7 +2,7 @@
 import header__menu from '../components/header__menu.vue';
 import glitchText from '../components/glitchText.vue';
 import menu_bar from '../components/menu/menu.vue'
-
+import hr_ from '../components/hr.vue';
 
 </script>
 
@@ -13,7 +13,7 @@ import menu_bar from '../components/menu/menu.vue'
 
     <div class="box">
         <glitchText title="Contact" />
-        <hr>
+        <hr_ />
 
 
     </div>

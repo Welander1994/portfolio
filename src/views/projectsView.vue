@@ -1,7 +1,8 @@
 <script setup>
 import header__menu from '../components/header__menu.vue';
 import glitchText from '../components/glitchText.vue';
-import menu_bar from '../components/menu/menu.vue'
+import menu_bar from '../components/menu/menu.vue';
+import hr_ from '../components/hr.vue';
 import { onMounted } from 'vue';
 
 
@@ -37,7 +38,7 @@ import { onMounted } from 'vue';
         <div class="box">
             <div class="main">
                 <glitchText title="Projects" />
-                <hr>
+                <hr_ />
                 <p>
                     Here, you'll find a selection of projects I've worked on throughout my time as a web developer. From
                     custom websites to interactive web applications, these projects showcase my skills in design,
@@ -150,10 +151,6 @@ import { onMounted } from 'vue';
         }
     }
 
-    hr {
-        border-color: var(--gray);
-        max-width: 40vw;
-    }
 
     p {
         padding: 10px 0;
@@ -257,10 +254,6 @@ import { onMounted } from 'vue';
         }
 
 
-        hr {
-            max-width: 80vw;
-            margin: 0 0 10px 0;
-        }
 
         h2,
         h1 {
