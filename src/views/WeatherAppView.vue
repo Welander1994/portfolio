@@ -40,7 +40,7 @@ import menu_bar from '../components/menu/menu.vue'
           </li>
           <li>
             <a href="https://openweathermap.org/" target="_blank">
-              <img src="../assets/img/logo_white_cropped.png" alt="github">
+              <img src="../assets/img/GitHub_Logo_White.png" alt="github">
             </a>
           </li>
         </ul>
