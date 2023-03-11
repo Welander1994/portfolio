@@ -12,7 +12,7 @@ import hr_ from '../components/hr.vue';
     </div>
 
     <div class="box">
-        <glitchText title="About me" />
+        <glitchText title="About me" speed="2"/>
         <hr_ />
         <p>
             Hi, I'm Jacob Welander, a 28-year-old web development student based in Odense, where i live with my girlfriend.

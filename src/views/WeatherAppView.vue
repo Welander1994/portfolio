@@ -14,7 +14,7 @@ import hr_ from '../components/hr.vue';
 
   <div class="box">
     <div class="box__content">
-      <glitchText title="Weather api" />
+      <glitchText title="Weather api"  speed="2"/>
       <hr_ />
       <p>
         For this project, I developed a sleek and modern weather app using <span>Vue.js 3</span> and <span>OpenWeather

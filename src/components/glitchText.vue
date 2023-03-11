@@ -1,9 +1,12 @@
 <script setup>
-import { onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 
-defineProps({
-    title: String
+const props = defineProps({
+    title: String,
+    speed: Number
 })
+
+
 
 function glitch() {
     const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -31,7 +34,7 @@ function glitch() {
             clearInterval(interval);
         }
 
-        iteration += 1 / 3;
+        iteration += 1 / props.speed;
     }, 30);
 
 
