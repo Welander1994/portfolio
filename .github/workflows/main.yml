@@ -23,4 +23,4 @@ jobs:
         server: ftp.we-lander.dk
         username: we-lander.dk
         password: 'Welander070494'
-        local-dir: /dist/
+        local-dir: ./dist/
