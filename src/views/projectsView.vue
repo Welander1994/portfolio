@@ -37,7 +37,7 @@ import { onMounted } from 'vue';
 
         <div class="box">
             <div class="main">
-                <glitchText title="Projects" />
+                <glitchText title="Projects"  speed="2"/>
                 <hr_ />
                 <p>
                     Here, you'll find a selection of projects I've worked on throughout my time as a web developer. From

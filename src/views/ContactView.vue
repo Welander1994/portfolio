@@ -12,7 +12,7 @@ import hr_ from '../components/hr.vue';
     </div>
 
     <div class="box">
-        <glitchText title="Contact" />
+        <glitchText title="Contact"  speed="2"/>
         <hr_ />
 
 

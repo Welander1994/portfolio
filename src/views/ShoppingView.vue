@@ -13,7 +13,7 @@ import hr_ from '../components/hr.vue';
 
   <div class="box">
     <div class="box__content">
-      <glitchText title="Shopping list app" />
+      <glitchText title="Shopping list app" speed="2" />
       <hr_ />
       <p>
         The ShoppingList <span>PWA</span> is a full-stack web application that I developed using <span>Vue.js</span> and
