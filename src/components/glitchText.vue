@@ -58,7 +58,7 @@ onMounted(() => {
 @import '../assets/main.css';
 
 h1 {
-    font-size: 3.6rem;
+    font-size: 2vw;
     color: var(--white);
     padding: 20px;
     user-select: none;
