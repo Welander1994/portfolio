@@ -108,10 +108,10 @@ a {
   padding: 2px;
   text-transform: uppercase;
   animation: myanim 2s;
-  animation-delay: 2s;
+  animation-delay: .8s;
 
   &:nth-child(2) {
-    animation-delay: 2.3s;
+    animation-delay: 1s;
   }
 }
 
