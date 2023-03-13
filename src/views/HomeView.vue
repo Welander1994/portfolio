@@ -12,7 +12,7 @@ import menu_bar from '../components/menu/menu.vue'
   <main>
     <div class=" main__title">
       <!--      <h1 id="Web__title">Jacob Welander</h1> -->
-      <glitchText class="gradient-text" title="Web Developer Student" />
+      <glitchText class="gradient-text" title="test Web Developer Student" />
       <p>
         I'm a web development student at UCL in Odense, and I'm passionate about building engaging and effective
         websites. Take a look at my <RouterLink to="/projects">projects</RouterLink> to see some examples of my work, or
