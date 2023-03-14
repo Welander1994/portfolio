@@ -16,7 +16,7 @@ import menu_bar from '../components/menu/menu.vue'
       <p>
         I'm a web development student at UCL in Odense, and I'm passionate about building engaging and effective
         websites. Take a look at my <RouterLink to="/projects">projects</RouterLink> to see some examples of my work, or
-        get to know <RouterLink to="/About">me</RouterLink> better as a person.
+        get to know <RouterLink to="/About">me</RouterLink> better as a person..
       </p>
     </div>
     <div class="main__img">
