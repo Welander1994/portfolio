@@ -146,11 +146,12 @@ function dateBuilder() {
     padding: 1rem;
     height: 70vh;
     max-width: 90%;
+    border: 1px solid var(--purple);
     border-radius: 25px;
     box-shadow: 0px 0px 43px 0px rgba(0, 0, 0, 0.59);
     -webkit-box-shadow: 10px 10px 43px 0px rgba(0, 0, 0, 0.59);
     -moz-box-shadow: 0px 0px 43px 0px rgba(0, 0, 0, 0.59);
-    background-color: var(--purple);
+
 }
 
 

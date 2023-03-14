@@ -108,7 +108,7 @@ import contactForm from '../components/contactForm.vue'
 
         display: flex;
         justify-content: center;
-        padding-top: 66px;
+        padding-top: 91px;
 
         .content {
             max-height: 500px;

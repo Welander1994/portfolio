@@ -9,11 +9,11 @@
         <form action="https://formspree.io/f/xpzelybw" method="POST">
             <label>
                 <p>email:</p>
-                <input class="email" type="email" name="email">
+                <input class="email" type="email" name="email" placeholder="Write your email here...">
             </label>
             <label>
                 <p>message:</p>
-                <textarea class="message" name="message"></textarea>
+                <textarea class="message" name="message" placeholder="Write your message here..."></textarea>
             </label>
             <!-- your other form fields go here -->
             <button type="submit">Send</button>
@@ -28,6 +28,15 @@ form {
     width: 25vw;
     padding: 2vw;
     user-select: none;
+
+    padding: 5rem 2rem;
+
+    max-width: 90%;
+    border: 1px solid var(--purple);
+    border-radius: 25px;
+    box-shadow: 0px 0px 43px 0px rgba(0, 0, 0, 0.59);
+    -webkit-box-shadow: 10px 10px 43px 0px rgba(0, 0, 0, 0.59);
+    -moz-box-shadow: 0px 0px 43px 0px rgba(0, 0, 0, 0.59);
 
 
     p {
@@ -60,7 +69,7 @@ form {
 
         background-color: transparent;
 
-        border-top: 1px var(--purple) solid;
+        border-bottom: 1px var(--purple) solid;
         border-left: 1px var(--purple) solid;
 
         color: var(--gray);
@@ -78,7 +87,7 @@ form {
 
     textarea {
         height: 100px;
-        position: relative;
+
     }
 
     button {
@@ -107,7 +116,8 @@ form {
 
 @media only screen and (max-width: 700px) {
     form {
-        width: 80vw;
+        width: 65vw;
+
     }
 }
 </style>
