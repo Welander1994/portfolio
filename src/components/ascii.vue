@@ -111,7 +111,7 @@ pre {
   white-space: pre;
   color: #ffffff;
   z-index: 99;
-  width: 90vw;
+
 
   overflow: hidden;
 
@@ -123,6 +123,7 @@ pre {
     font-size: 1.2vw;
     position: absolute;
     max-height: 450px;
+    width: 90vw;
   }
 }
 </style>

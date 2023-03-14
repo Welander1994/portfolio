@@ -122,7 +122,7 @@ import hr_ from '../components/hr.vue';
   }
 
   p {
-    padding: 10px 0;
+    padding: 20px 0;
     max-width: 40vw;
 
     a {
@@ -221,7 +221,7 @@ import hr_ from '../components/hr.vue';
     p {
       width: 90vw;
       max-width: none;
-      padding: 0 0 20px 0;
+      padding: 10px 0;
     }
 
     nav {

@@ -37,7 +37,7 @@ import { onMounted } from 'vue';
 
         <div class="box">
             <div class="main">
-                <glitchText title="Projects"  speed="2"/>
+                <glitchText title="Projects" speed="2" />
                 <hr_ />
                 <p>
                     Here, you'll find a selection of projects I've worked on throughout my time as a web developer. From
@@ -153,7 +153,7 @@ import { onMounted } from 'vue';
 
 
     p {
-        padding: 10px 0;
+        padding: 20px 0;
         max-width: 40vw;
 
         a {
@@ -265,7 +265,7 @@ import { onMounted } from 'vue';
         p {
             max-width: none;
 
-            padding: 0 0 10px 0;
+            padding: 10px 0;
         }
 
         nav {

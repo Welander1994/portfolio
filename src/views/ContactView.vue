@@ -14,16 +14,19 @@ import contactForm from '../components/contactForm.vue'
 
     <div class="box">
         <div class=" main__title">
-            <glitchText title="Contact"  speed="2"/>
+            <glitchText title="Contact" speed="2" />
             <hr_ />
             <p>
-                Thank you for visiting my portfolio! If you have any questions, work inquiries, or just want to say hello, I would love to hear from you. Please feel free to fill out the contact form, or you can email me directly at <span>Jacobwelander1994@gmail.com</span>. <br>I look forward to hearing from you and potentially collaborating on a project together. 
+                Thank you for visiting my portfolio! If you have any questions, work inquiries, or just want to say hello, I
+                would love to hear from you. Please feel free to fill out the contact form, or you can email me directly at
+                <span>Jacobwelander1994@gmail.com</span>. <br>I look forward to hearing from you and potentially
+                collaborating on a project together.
             </p>
         </div>
         <div class="box__img">
             <contactForm />
         </div>
-       
+
 
     </div>
 </template>
@@ -44,7 +47,7 @@ import contactForm from '../components/contactForm.vue'
     }
 
     p {
-        padding: 10px 0;
+        padding: 20px 0;
         line-height: 21px;
         max-width: 40vw;
 
@@ -101,11 +104,11 @@ import contactForm from '../components/contactForm.vue'
 
     &__img {
         width: 90vw;
-  
+
 
         display: flex;
         justify-content: center;
-        padding-top: 10vh;
+        padding-top: 66px;
 
         .content {
             max-height: 500px;
@@ -139,8 +142,8 @@ import contactForm from '../components/contactForm.vue'
 
         p {
             max-width: none;
+            padding: 10px 0;
 
-            padding: 0 0 10px 0;
         }
 
         nav {
@@ -154,10 +157,10 @@ import contactForm from '../components/contactForm.vue'
 
         &__img {
 
-        justify-content: start;
-        padding-top: 5vh;
+            justify-content: start;
+            padding-top: 5vh;
 
-    }
+        }
     }
 }
 </style>

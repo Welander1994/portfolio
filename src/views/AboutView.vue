@@ -12,7 +12,7 @@ import hr_ from '../components/hr.vue';
     </div>
 
     <div class="box">
-        <glitchText title="About me" speed="2"/>
+        <glitchText title="About me" speed="2" />
         <hr_ />
         <p>
             Hi, I'm Jacob Welander, a 28-year-old web development student based in Odense, where i live with my girlfriend.
@@ -49,16 +49,16 @@ import hr_ from '../components/hr.vue';
             </ul>
         </div>
         <div class="Some">
-            <header>
-                <a href="https://github.com/Welander1994?tab=repositories" target="_blank">
+        <header>
+            <a href="https://github.com/Welander1994?tab=repositories" target="_blank">
                     <img src="../assets/img/GitHub_Logo_White.png" alt="github">
                 </a>
                 <a href="https://www.linkedin.com/in/jacob-welander-776b03105/" target="_blank">
                     <img src="../assets/img/LinkedIn_Logo_2019.png" alt="github">
                 </a>
-   <!--              <a href="../assets/document/cv.pdf" target="_blank">
-                    <img src="../assets/img/CV.png" alt="github">
-                </a> -->
+                <!--              <a href="../assets/document/cv.pdf" target="_blank">
+                                    <img src="../assets/img/CV.png" alt="github">
+                                </a> -->
             </header>
         </div>
 
@@ -125,7 +125,7 @@ import hr_ from '../components/hr.vue';
 
 
     p {
-        padding: 10px 0;
+        padding: 20px 0;
         max-width: 40vw;
 
         a {
@@ -179,7 +179,10 @@ import hr_ from '../components/hr.vue';
         }
     }
 
-
+    header {
+        padding: 20px 0;
+        display: flex;
+    }
 
 
 }
@@ -201,7 +204,7 @@ import hr_ from '../components/hr.vue';
         p {
             max-width: none;
 
-            padding: 0 0 10px 0;
+            padding: 10px 0;
         }
 
         nav {

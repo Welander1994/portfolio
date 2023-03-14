@@ -42,7 +42,7 @@ main {
   .main__title {
     display: flex;
     flex-direction: column;
- 
+
     padding: 20px 0;
     min-width: 40vw;
   }
@@ -56,7 +56,7 @@ main {
   h1 {
     min-width: 45vw;
     width: 45vw;
-    font-size: 3.6rem;
+
     text-transform: uppercase;
     -webkit-text-stroke: 1px white;
     color: var(--white);
@@ -66,13 +66,13 @@ main {
 
 p {
   max-width: 32vw;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 
 
 h1 {
-  font-size: 1.5rem;
+
   padding: 0;
   text-decoration: none;
 
@@ -148,7 +148,6 @@ a:hover {
     }
 
     h1 {
-      font-size: 3rem;
       width: 85vw;
       -webkit-text-stroke: .5px white;
 
@@ -169,18 +168,9 @@ a:hover {
 
   }
 
-  .gradient-text {
-    font-size: 2.5rem;
-
-  }
 
 
-}
 
-@media only screen and (max-width: 200px) {
-  h1 {
-    font-size: 3rem;
-  }
 }
 </style>
 

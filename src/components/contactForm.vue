@@ -26,8 +26,9 @@ form {
     display: flex;
     flex-direction: column;
     width: 25vw;
-    padding: 0 2vw;
+    padding: 2vw;
     user-select: none;
+
 
     p {
         text-decoration: none;
@@ -50,8 +51,8 @@ form {
     input,
     textarea,
     button {
-        width: 100%;
-        padding: 0 0 0 5px;
+        width: 90%;
+        padding: 15px;
         margin: 10px 0;
         border: none;
         min-height: 30px;
@@ -63,7 +64,7 @@ form {
         border-left: 1px var(--purple) solid;
 
         color: var(--gray);
-        font-size: 16px;
+        font-size: 18px;
 
         font-family: myFirstFont;
 
@@ -88,7 +89,7 @@ form {
         padding: 2px;
         text-transform: uppercase;
         transition: .6s all;
-
+        font-size: 24px;
         width: 30%;
         text-align: start;
 
@@ -100,5 +101,13 @@ form {
         }
     }
 
+
+
+}
+
+@media only screen and (max-width: 700px) {
+    form {
+        width: 80vw;
+    }
 }
 </style>
