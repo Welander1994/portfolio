@@ -122,7 +122,7 @@ pre {
   pre {
     font-size: 1.3vw;
     position: absolute;
-    height: 50svh;
+    height: 45svh;
   }
 }
 </style>
