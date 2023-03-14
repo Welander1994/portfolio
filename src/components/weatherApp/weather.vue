@@ -150,9 +150,7 @@ function dateBuilder() {
     box-shadow: 0px 0px 43px 0px rgba(0, 0, 0, 0.59);
     -webkit-box-shadow: 10px 10px 43px 0px rgba(0, 0, 0, 0.59);
     -moz-box-shadow: 0px 0px 43px 0px rgba(0, 0, 0, 0.59);
-    background-color: color-mix(in srgb, var(--purple) 50%, rgba(183, 0, 255, 0));
-    ;
-
+    background-color: var(--purple);
 }
 
 
