@@ -23,7 +23,7 @@ function openMenu() {
             </div>
             <div class="menu" :class="{ active: menu }">
                 <RouterLink to="/">Home</RouterLink>
-                <RouterLink to="/Projects">Projekter</RouterLink>
+                <RouterLink to="/Projects">Projects</RouterLink>
                 <RouterLink to="/About">About</RouterLink>
                 <RouterLink to="/Contact">Contact</RouterLink>
             </div>

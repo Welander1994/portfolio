@@ -105,6 +105,7 @@
 
 <style lang="scss" scoped>
 pre {
+  position: absolute;
   font-size: .4vw;
   font-family: 'Courier New', Courier, monospace;
   white-space: pre;

@@ -17,7 +17,7 @@ import contactForm from '../components/contactForm.vue'
             <glitchText title="Contact"  speed="2"/>
             <hr_ />
             <p>
-                Thank you for visiting my portfolio! If you have any questions, work inquiries, or just want to say hello, I would love to hear from you. Please feel free to fill out the contact form, <br> or you can email me directly at <span>Jacobwelander1994@gmail.com</span>. <br>I look forward to hearing from you and potentially collaborating on a project together. 
+                Thank you for visiting my portfolio! If you have any questions, work inquiries, or just want to say hello, I would love to hear from you. Please feel free to fill out the contact form, or you can email me directly at <span>Jacobwelander1994@gmail.com</span>. <br>I look forward to hearing from you and potentially collaborating on a project together. 
             </p>
         </div>
         <div class="box__img">
@@ -151,6 +151,13 @@ import contactForm from '../components/contactForm.vue'
             }
         }
 
+
+        &__img {
+
+        justify-content: start;
+        padding-top: 5vh;
+
+    }
     }
 }
 </style>
