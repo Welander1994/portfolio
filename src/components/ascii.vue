@@ -120,9 +120,9 @@ pre {
 @media only screen and (max-width: 700px) {
 
   pre {
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     position: absolute;
-    height: 45svh;
+    max-height: 450px;
   }
 }
 </style>
