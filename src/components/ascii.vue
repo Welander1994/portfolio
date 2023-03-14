@@ -110,6 +110,7 @@ pre {
   font-family: 'Courier New', Courier, monospace;
   white-space: pre;
   color: #ffffff;
+  z-index: 99;
 
 }
 

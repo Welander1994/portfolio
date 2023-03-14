@@ -164,6 +164,7 @@ a:hover {
       padding: 0vw;
       width: 89vw;
       overflow: hidden;
+      z-index: -99;
     }
 
   }
