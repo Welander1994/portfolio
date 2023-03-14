@@ -3,6 +3,7 @@
 import glitchText from '../components/glitchText.vue';
 import menu_bar from '../components/menu/menu.vue'
 import hr_ from '../components/hr.vue';
+import contactForm from '../components/contactForm.vue'
 
 </script>
 
@@ -12,9 +13,17 @@ import hr_ from '../components/hr.vue';
     </div>
 
     <div class="box">
-        <glitchText title="Contact"  speed="2"/>
-        <hr_ />
-
+        <div class=" main__title">
+            <glitchText title="Contact"  speed="2"/>
+            <hr_ />
+            <p>
+                Thank you for visiting my portfolio! If you have any questions, work inquiries, or just want to say hello, I would love to hear from you. Please feel free to fill out the contact form, <br> or you can email me directly at <span>Jacobwelander1994@gmail.com</span>. <br>I look forward to hearing from you and potentially collaborating on a project together. 
+            </p>
+        </div>
+        <div class="box__img">
+            <contactForm />
+        </div>
+       
 
     </div>
 </template>
@@ -22,7 +31,7 @@ import hr_ from '../components/hr.vue';
 <style lang="scss" scoped>
 .box {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: 0 2vw 2vw 2vw;
     padding: 0 30px;
     border: var(--white) 2px solid;
@@ -36,6 +45,7 @@ import hr_ from '../components/hr.vue';
 
     p {
         padding: 10px 0;
+        line-height: 21px;
         max-width: 40vw;
 
         a {
@@ -91,11 +101,11 @@ import hr_ from '../components/hr.vue';
 
     &__img {
         width: 90vw;
-        height: 100%;
+  
 
         display: flex;
         justify-content: center;
-        padding-top: 6vh;
+        padding-top: 10vh;
 
         .content {
             max-height: 500px;

@@ -56,7 +56,7 @@ import hr_ from '../components/hr.vue';
                 <a href="https://www.linkedin.com/in/jacob-welander-776b03105/" target="_blank">
                     <img src="../assets/img/LinkedIn_Logo_2019.png" alt="github">
                 </a>
-                <a href="../assets/document/CV - Jacob Welander Jensen.pdf" download>
+                <a href="../assets/document/cv.pdf" target="_blank">
                     <img src="../assets/img/CV.png" alt="github">
                 </a>
             </header>
