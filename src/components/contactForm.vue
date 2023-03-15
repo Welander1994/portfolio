@@ -85,8 +85,8 @@ form {
 
         background-color: transparent;
 
-        border-bottom: 1px var(--purple) solid;
-        border-left: 1px var(--purple) solid;
+        border-top: 1px var(--purple) solid;
+/*         border-left: 1px var(--purple) solid; */
 
         color: var(--gray);
         font-size: 18px;
