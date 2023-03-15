@@ -1,40 +1,142 @@
 <script setup>
-   function onSubmit(token) {
-     document.getElementById("contact-form").submit();
-   }
+import { ref } from 'vue';
+
+const mailStatus = ref(false);
+
+const changeMailStatus = () => {
+    mailStatus.value = !mailStatus.value;
+}
+
+
+const mailInfo = ref({
+    email: '',
+    message: ''
+});
+
+async function postData() {
+    // Default options are marked with *
+    const response = await fetch('https://formspree.io/f/xpzelybw', {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(mailInfo.value),
+    });
+
+
+    return response.json();
+
+
+}
+
+
+
+function onSubmit() {
+
+    changeMailStatus();
+    postData();
+    mailInfo.value.email = '';
+    mailInfo.value.message = '';
+}
+
+
 </script>
 
 <template>
-
     <div>
-        <!-- modify this form HTML and place wherever you want your form -->
-
-        <form id="contact-form" action="https://formspree.io/f/xpzelybw" method="POST">
+        <form id="contact-form" @submit.prevent="onSubmit()" method="POST">
             <label>
                 <p>email:</p>
-                <input class="email" type="email" name="email" placeholder="Write your email here...">
+                <input class="email" type="email" v-model="mailInfo.email" name="email"
+                    placeholder="Write your email here...">
             </label>
             <label>
                 <p>message:</p>
-                <textarea class="message" name="message" placeholder="Write your message here..."></textarea>
-    
+                <textarea class="message" name="message" v-model="mailInfo.message"
+                    placeholder="Write your message here..."></textarea>
+
             </label>
             <!-- your other form fields go here -->
-            <button 
-            class="g-recaptcha" 
-            data-sitekey=" 6LfJ6vwkAAAAANuzyTtvxoAxD8Qk8wmABwqgHF0N" 
-            data-callback='onSubmit' 
-            data-action='submit'
-            type="submit">Send</button>
-            
+            <button class="g-recaptcha" data-sitekey=" 6LfJ6vwkAAAAANuzyTtvxoAxD8Qk8wmABwqgHF0N" data-action='submit'
+                type="submit">Send</button>
         </form>
+    </div>
+
+    <div class="model" v-if="mailStatus">
+        <div class="content">
+            <h2>Succes your mail has been sent</h2>
+            <p>Thanks for contacting me</p>
+            <button @click="changeMailStatus">Close</button>
+        </div>
     </div>
 </template>
 
 <style lang="scss" scoped>
-
 .g-recaptcha {
-display: block !important;
+    display: block !important;
+
+}
+
+.model {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100svw;
+    height: 100svh;
+    backdrop-filter: blur(2px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    .content {
+        background: rgb(20, 20, 20);
+        background: linear-gradient(43deg, rgba(20, 20, 20, 1) 0%, rgba(51, 51, 51, 1) 83%);
+        border: 1px solid var(--purple);
+        border-radius: 25px;
+        padding: 5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        h2 {
+            user-select: none;
+            background: linear-gradient(60deg, var(--white) 0%, var(--gray) 100%);
+            background-size: 100%;
+            background-repeat: repeat;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-background-clip: text;
+            -moz-text-fill-color: transparent;
+            -webkit-text-stroke: 2px transparent;
+            font-size: 30px;
+        }
+
+        button {
+            border: none;
+            background-color: transparent;
+            text-decoration: none;
+            color: var(--purple);
+            font-weight: bolder;
+            font-size: 20px;
+            font-family: myFirstFont;
+            padding: 2px;
+            text-transform: uppercase;
+            transition: .5s;
+
+            &:hover {
+                cursor: pointer;
+                color: var(--white);
+                text-shadow: #ff1493 5px 0px, limegreen -5px 0px;
+
+            }
+        }
+    }
 
 }
 
@@ -86,7 +188,7 @@ form {
         background-color: transparent;
 
         border-top: 1px var(--purple) solid;
-/*         border-left: 1px var(--purple) solid; */
+        /*         border-left: 1px var(--purple) solid; */
 
         color: var(--gray);
         font-size: 18px;
@@ -95,6 +197,7 @@ form {
 
         &:focus {
             border: 1px var(--purple) solid;
+            padding-left: 10px;
             outline: none
         }
 
@@ -134,6 +237,22 @@ form {
     form {
         width: 65vw;
         padding: 2rem 2rem;
+
+    }
+
+    .model {
+
+
+
+        .content {
+            width: 80vw;
+            height: 30vh;
+            text-align: center;
+
+            h2 {}
+
+            button {}
+        }
 
     }
 }
