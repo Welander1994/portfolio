@@ -17,7 +17,7 @@
             <label>
                 <p>message:</p>
                 <textarea class="message" name="message" placeholder="Write your message here..."></textarea>
-                <div class="g-recaptcha" data-sitekey=" 6LfJ6vwkAAAAANuzyTtvxoAxD8Qk8wmABwqgHF0N"></div> 
+    
             </label>
             <!-- your other form fields go here -->
             <button 
