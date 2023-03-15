@@ -42,7 +42,7 @@ form {
     display: flex;
     flex-direction: column;
     width: 25vw;
-    padding: 3vw;
+
     user-select: none;
     position: relative;
     padding: 5rem 3rem;
@@ -77,7 +77,7 @@ form {
     textarea,
     button {
         width: 90%;
-        padding: 15px;
+        padding: 15px 0;
         margin: 10px 0;
         border: none;
         min-height: 30px;
@@ -133,6 +133,7 @@ form {
 @media only screen and (max-width: 700px) {
     form {
         width: 65vw;
+        padding: 2rem 2rem;
 
     }
 }
