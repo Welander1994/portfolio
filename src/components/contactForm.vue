@@ -1,12 +1,15 @@
 <script setup>
-
+   function onSubmit(token) {
+     document.getElementById("contact-form").submit();
+   }
 </script>
 
 <template>
+
     <div>
         <!-- modify this form HTML and place wherever you want your form -->
 
-        <form action="https://formspree.io/f/xpzelybw" method="POST">
+        <form id="contact-form" action="https://formspree.io/f/xpzelybw" method="POST">
             <label>
                 <p>email:</p>
                 <input class="email" type="email" name="email" placeholder="Write your email here...">
@@ -14,22 +17,35 @@
             <label>
                 <p>message:</p>
                 <textarea class="message" name="message" placeholder="Write your message here..."></textarea>
+                <div class="g-recaptcha" data-sitekey=" 6LfJ6vwkAAAAANuzyTtvxoAxD8Qk8wmABwqgHF0N"></div> 
             </label>
             <!-- your other form fields go here -->
-            <button type="submit">Send</button>
+            <button 
+            class="g-recaptcha" 
+            data-sitekey=" 6LfJ6vwkAAAAANuzyTtvxoAxD8Qk8wmABwqgHF0N" 
+            data-callback='onSubmit' 
+            data-action='submit'
+            type="submit">Send</button>
+            
         </form>
     </div>
 </template>
 
 <style lang="scss" scoped>
+
+.g-recaptcha {
+display: block !important;
+
+}
+
 form {
     display: flex;
     flex-direction: column;
     width: 25vw;
-    padding: 2vw;
+    padding: 3vw;
     user-select: none;
-
-    padding: 5rem 2rem;
+    position: relative;
+    padding: 5rem 3rem;
 
     max-width: 90%;
     border: 1px solid var(--purple);
@@ -44,7 +60,7 @@ form {
         color: var(--gray);
         font-weight: 900;
         font-size: 24px;
-        padding: 2px;
+        padding: 5px 2px;
         text-transform: uppercase;
         user-select: none;
         background: linear-gradient(60deg, var(--white) 0%, var(--gray) 100%);
