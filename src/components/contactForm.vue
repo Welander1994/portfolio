@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 
-const mailStatus = ref(true);
+const mailStatus = ref(false);
 
 const changeMailStatus = () => {
     mailStatus.value = !mailStatus.value;
@@ -14,19 +14,18 @@ const mailInfo = ref({
 });
 
 async function postData() {
-    /*     // Default options are marked with *
-        const response = await fetch('https://formspree.io/f/xpzelybw', {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(mailInfo.value),
-        });
-    
-    
-        return response.json();
-    
-     */
+    // Default options are marked with *
+    const response = await fetch('https://formspree.io/f/xpzelybw', {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(mailInfo.value),
+    });
+
+
+    return response.json();
+
 }
 
 
