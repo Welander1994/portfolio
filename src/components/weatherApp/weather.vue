@@ -5,6 +5,7 @@ import Snow from './snow.vue';
 import Mist from './mist.vue';
 import Thunder from './thunder.vue';
 import clouds from './clouds.vue';
+import sunshine from './sunshine.vue'
 
 const api_key = 'f114c1d8edfe049f0d1de15551609120';
 const url_base = 'https://api.openweathermap.org/data/2.5/';
@@ -21,6 +22,7 @@ async function fetchWeather() {
             return res.json();
         })
         .then(setResults);
+        
 
 };
 
@@ -51,10 +53,12 @@ function setResults(results) {
             case 'Thunderstorm':
                 weather__type.value = 'Thundering'
                 break;
+            case 'Clear':
+                weather__type.value = 'Clear'
+                break;
         }
 
     }
-
 
 
 };
@@ -129,6 +133,11 @@ function dateBuilder() {
             <clouds />
         </div>
 
+        <div v-if="weather__type == 'Clear'">
+            <sunshine />
+        </div>
+       
+
     </div>
 </template>
 
@@ -141,6 +150,7 @@ function dateBuilder() {
     display: flex;
     flex-direction: column;
 }
+
 
 .content {
     padding: 1rem;
