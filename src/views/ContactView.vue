@@ -103,8 +103,9 @@ import contactForm from '../components/contactForm.vue'
 
 
     &__img {
-        width: 90vw;
-
+        width: 50vw;
+        position: absolute;
+        right: 0;
 
         display: flex;
         justify-content: center;
@@ -156,6 +157,8 @@ import contactForm from '../components/contactForm.vue'
 
 
         &__img {
+            top: 42vh;
+            right: inherit;
 
             justify-content: start;
             padding-top: 5vh;
