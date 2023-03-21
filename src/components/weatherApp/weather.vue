@@ -144,7 +144,8 @@ function dateBuilder() {
 
 .content {
     padding: 1rem;
-    height: 70vh;
+    max-height: 70vh;
+    min-height: 600px;
     max-width: 90%;
     border: 1px solid var(--purple);
     border-radius: 25px;

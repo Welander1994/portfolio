@@ -4,7 +4,8 @@ import WeatherAppView from '../views/WeatherAppView.vue';
 import ShoppingView from '../views/ShoppingView.vue';
 import projects from '../views/projectsView.vue';
 import about from '../views/AboutView.vue';
-import contact from '../views/ContactView.vue'
+import contact from '../views/ContactView.vue';
+import studentCounsel from '../views/StudentCounselorView.vue';
 
 const router = createRouter({
     history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -23,6 +24,11 @@ const router = createRouter({
             path: '/Shopping',
             name: 'Shopping',
             component: ShoppingView
+        },
+        {
+            path: '/studentCounsel',
+            name: 'studentCounsel',
+            component: studentCounsel
         },
         {
             path: '/Projects',

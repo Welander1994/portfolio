@@ -12,7 +12,7 @@
 <style lang="scss" scoped>
 hr {
     border-color: var(--purple);
-    width: 40vw;
+    width: 50vw;
 }
 
 @media only screen and (max-width: 700px) {

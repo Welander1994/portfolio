@@ -48,6 +48,7 @@ import { onMounted } from 'vue';
 
                     <RouterLink id="weatherApp" to="/WeatherApp">Weather App</RouterLink>
                     <RouterLink id="ShoppingList" to="/Shopping">Shopping list</RouterLink>
+                    <RouterLink id="studentCounsel" to="/studentCounsel">student Counsel</RouterLink>
 
                 </div>
             </div>
