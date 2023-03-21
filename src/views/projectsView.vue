@@ -88,6 +88,10 @@ import { onMounted } from 'vue';
             &:nth-child(2) {
                 animation-delay: 1s;
             }
+
+            &:nth-child(3) {
+                animation-delay: 1.2s;
+            }
         }
 
 
