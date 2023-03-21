@@ -3,26 +3,18 @@ import { ref, onMounted } from 'vue';
 
 let rings = ref(document.getElementsByClassName('ring'));
 
-let ringSize= ref('50');
+let ringSize = ref('50');
 
 
 onMounted(() => {
 
-for (let i = 0; i < rings.value.length; i++) {
-    console.log(rings.value[i].style);
+    for (let i = 0; i < rings.value.length; i++) {
+        rings.value[i].style.padding = ringSize.value * i + 'px';
+        rings.value[i].style.opacity = 10 / i + '%';
 
-    rings.value[i].style.padding = ringSize.value * i + 'px';
-/*     rings.value[i].style.height = ringSize.value * i + 'px'; */
-
-    rings.value[i].style.opacity = 10 / i + '%';
-
-}
+    }
 
 })
-
-
-
-console.log(rings.value);
 
 </script>
 
@@ -43,7 +35,6 @@ console.log(rings.value);
 </template>
 
 <style lang="scss" scoped>
-
 .sun {
     position: absolute;
     top: 0vh;
@@ -61,31 +52,30 @@ console.log(rings.value);
 }
 
 .ring {
-    position: absolute;
+    position: fixed;
     overflow: hidden;
     width: 150px;
-    height: 150px; 
+    height: 150px;
     border-radius: 50%;
     opacity: 30%;
     box-shadow: 10px 10px 20px black;
     background-color: var(--gray);
-    
+
     animation: sun 10s alternate infinite ease;
-   
+
 }
 
 
 @keyframes sun {
-0% {
-    
-    transform: scale(1) translateY(-350px) translateX(40vw);
-}
+    0% {
 
-100% {
-    
-    transform: scale(1.05) translateY(-350px) translateX(40vw);
-}
+        transform: scale(1) translateY(-350px) translateX(40vw);
+    }
+
+    100% {
+
+        transform: scale(1.05) translateY(-350px) translateX(40vw);
+    }
 
 }
-
 </style>

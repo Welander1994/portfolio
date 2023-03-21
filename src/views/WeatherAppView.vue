@@ -177,6 +177,7 @@ import hr_ from '../components/hr.vue';
     width: 90vw;
     height: 100%;
 
+
     display: flex;
     justify-content: center;
     padding-top: 6vh;
