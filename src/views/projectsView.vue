@@ -76,7 +76,7 @@ import { onMounted } from 'vue';
         a {
             text-decoration: none;
             color: var(--purple);
-            font-weight: bolder;
+            font-weight: 900;
             width: fit-content;
             padding: 10px 0;
             text-transform: uppercase;
