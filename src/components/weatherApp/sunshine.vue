@@ -59,7 +59,7 @@ onMounted(() => {
     border-radius: 50%;
     opacity: 30%;
     box-shadow: 10px 10px 20px black;
-    background-color: var(--gray);
+    background-color: rgba(243, 243, 72, 0.781);
 
     animation: sun 10s alternate infinite ease;
 

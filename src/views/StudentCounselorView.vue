@@ -64,13 +64,13 @@ import hr_ from '../components/hr.vue';
             <nav>
                 <ul class="links">
                     <li>
-                        <a href="https://we-lander.dk/Studievejledning/index.html#/" target="_blank">
+                        <a href="https://github.com/Antegra/WebDev-1stSem-JIMB" target="_blank">
                             <img src="../assets/img/GitHub_Logo_White.png" alt="github">
                         </a>
                     </li>
                     <li>
                         <a id="shopping__img" href="https://we-lander.dk/Studievejledning/index.html#/" target="_blank">
-                            <img src="../assets/img/ucl-logo.24165962.png" alt="github">
+                            <img src="../assets/img/ucl-logo.24165962.png" alt="Studievejledning">
                         </a>
                     </li>
                 </ul>
@@ -96,7 +96,7 @@ import hr_ from '../components/hr.vue';
 .box {
     display: flex;
 
-    margin: 0 2vw 2vw 2vw;
+    margin: 0 2vw;
     padding: 0 30px;
     border: var(--white) 2px solid;
     border-color: var(--white) transparent transparent var(--white);
