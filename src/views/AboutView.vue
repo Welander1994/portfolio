@@ -57,8 +57,8 @@ import hr_ from '../components/hr.vue';
                     <img src="../assets/img/LinkedIn_Logo_2019.png" alt="github">
                 </a>
                 <!--              <a href="../assets/document/cv.pdf" target="_blank">
-                                        <img src="../assets/img/CV.png" alt="github">
-                                    </a> -->
+                                            <img src="../assets/img/CV.png" alt="github">
+                                        </a> -->
             </header>
         </div>
 
@@ -67,6 +67,7 @@ import hr_ from '../components/hr.vue';
             any questions or are interested in
             collaborating!
         </p>
+
 
     </div>
 </template>
