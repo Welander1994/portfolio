@@ -49,16 +49,16 @@ import hr_ from '../components/hr.vue';
             </ul>
         </div>
         <div class="Some">
-        <header>
-            <a href="https://github.com/Welander1994?tab=repositories" target="_blank">
+            <header>
+                <a href="https://github.com/Welander1994?tab=repositories" target="_blank">
                     <img src="../assets/img/GitHub_Logo_White.png" alt="github">
                 </a>
                 <a href="https://www.linkedin.com/in/jacob-welander-776b03105/" target="_blank">
                     <img src="../assets/img/LinkedIn_Logo_2019.png" alt="github">
                 </a>
-                <!--              <a href="../assets/document/cv.pdf" target="_blank">
-                                            <img src="../assets/img/CV.png" alt="github">
-                                        </a> -->
+                <a href="https://we-lander.dk/Jacob%20welander%20-%20CV.pdf" target="_blank">
+                    <img src="../assets/img/CV.png" alt="github">
+                </a>
             </header>
         </div>
 
@@ -70,6 +70,7 @@ import hr_ from '../components/hr.vue';
 
 
     </div>
+    
 </template>
 
 <style lang="scss" scoped>

@@ -6,6 +6,7 @@ import projects from '../views/projectsView.vue';
 import about from '../views/AboutView.vue';
 import contact from '../views/ContactView.vue';
 import studentCounsel from '../views/StudentCounselorView.vue';
+import developer from '../views/developeView.vue';
 
 const router = createRouter({
     history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -44,6 +45,11 @@ const router = createRouter({
             path: '/Contact',
             name: 'contact',
             component: contact
+        },
+        {
+            path: '/developer',
+            name: 'developer',
+            component: developer
         },
 
     ]
