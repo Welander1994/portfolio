@@ -84,6 +84,7 @@ import hr_ from '../components/hr.vue';
                 <li><span>DATABASE DESIGN</span></li>
                 <li><span>Local storage </span></li>
             </ul>
+         
         </div>
         <div class="box__img">
 
@@ -191,6 +192,8 @@ import hr_ from '../components/hr.vue';
 
         list-style: circle;
         color: white;
+
+        margin: 20px 0;
 
         li {
             padding: 5px 0;
