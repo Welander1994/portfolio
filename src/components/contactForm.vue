@@ -45,13 +45,13 @@ function onSubmit() {
     <div>
         <form id="contact-form" @submit.prevent="onSubmit()" method="POST">
             <label>
-                <p>email:</p>
+                <p>email</p>
                 <input class="email" type="email" v-model="mailInfo.email" name="email"
                     placeholder="Write your email here...">
 
             </label>
             <label>
-                <p>message:</p>
+                <p>message</p>
                 <textarea class="message" name="message" placeholder="Write your message here..."></textarea>
 
             </label>
@@ -161,7 +161,7 @@ form {
         font-weight: 900;
         font-size: 24px;
         padding: 5px 2px;
-        text-transform: uppercase;
+        text-transform: capitalize;
 
         background: linear-gradient(60deg, var(--white) 0%, var(--gray) 100%);
         background-size: 100%;

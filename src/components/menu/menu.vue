@@ -55,7 +55,7 @@ nav {
     padding: 0 1vw;
     font-size: 18px;
     font-weight: bold;
-
+    z-index: 99;
 
     a {
         text-decoration: none;
