@@ -48,11 +48,11 @@ function onSubmit() {
                 <p>email:</p>
                 <input class="email" type="email" v-model="mailInfo.email" name="email"
                     placeholder="Write your email here...">
+
             </label>
             <label>
                 <p>message:</p>
-                <textarea class="message" name="message" v-model="mailInfo.message"
-                    placeholder="Write your message here..."></textarea>
+                <textarea class="message" name="message" placeholder="Write your message here..."></textarea>
 
             </label>
             <!-- your other form fields go here -->
@@ -105,7 +105,7 @@ function onSubmit() {
 
 
         h2 {
-            user-select: none;
+
             background: linear-gradient(60deg, var(--white) 0%, var(--gray) 100%);
             background-size: 100%;
             background-repeat: repeat;
@@ -144,8 +144,6 @@ form {
     display: flex;
     flex-direction: column;
     width: 25vw;
-    z-index: -99;
-    user-select: none;
     position: relative;
     padding: 5rem 3rem;
 
@@ -164,7 +162,7 @@ form {
         font-size: 24px;
         padding: 5px 2px;
         text-transform: uppercase;
-        user-select: none;
+
         background: linear-gradient(60deg, var(--white) 0%, var(--gray) 100%);
         background-size: 100%;
         background-repeat: repeat;
@@ -184,7 +182,7 @@ form {
         border: none;
         min-height: 30px;
         transition: .1s;
-
+        z-index: 1;
         background-color: transparent;
 
         border-top: 1px var(--purple) solid;
