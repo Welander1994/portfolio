@@ -16,7 +16,7 @@
     font-size: 50px;
     font-weight: 300;
     padding-right: -20px;
-    color: white;
+    color: var(--white);
 
     user-select: none;
     cursor: pointer;
