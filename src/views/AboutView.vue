@@ -70,7 +70,6 @@ import hr_ from '../components/hr.vue';
 
 
     </div>
-    
 </template>
 
 <style lang="scss" scoped>
@@ -87,7 +86,7 @@ import hr_ from '../components/hr.vue';
         align-items: center;
         height: 40px;
         padding: 5px 30px;
-        margin: 0 20px 0 0;
+        margin: 0 20px 20px 0;
         border-radius: 25px;
         object-fit: contain;
         box-shadow: 5px 5px 13px 0px rgb(0 0 0 / 59%);
@@ -184,6 +183,8 @@ import hr_ from '../components/hr.vue';
     header {
         padding: 20px 0;
         display: flex;
+
+
     }
 
 
@@ -232,6 +233,12 @@ import hr_ from '../components/hr.vue';
                     margin: 1px 18px;
                 }
             }
+        }
+
+        header {
+            width: 90vw;
+            flex-wrap: wrap;
+            flex-direction: row;
         }
 
 

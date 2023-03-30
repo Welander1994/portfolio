@@ -14,7 +14,7 @@ import menu_bar from '../components/menu/menu.vue'
       <!--      <h1 id="Web__title">Jacob Welander</h1> -->
       <glitchText class="gradient-text" title="Web Developer" speed="1.5" />
       <p>
-        I'm a web development student at UCL in Odense, and I'm passionate about building engaging and effective
+        I'm a web development student at UCL in Odense, and I'm passionate about building, engaging and effective
         websites. Take a look at my <RouterLink to="/projects">projects</RouterLink> to see some examples of my work, or
         get to know <RouterLink to="/About">me</RouterLink> better as a person..
       </p>

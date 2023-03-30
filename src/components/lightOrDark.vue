@@ -3,7 +3,7 @@ import { ref, onMounted } from 'vue';
 const root = document.querySelector(':root');
 
 let dark = true;
-let name = ref('Light Mode')
+let name = ref('2')
 
 
 const darkMode = () => {
@@ -34,7 +34,7 @@ const darkMode = () => {
         color.white = '#7063bc';
         color.show = 'none';
         color.dark = false;
-        color.name = 'Light Mode'
+        color.name = 'Dark Mode'
         localStorage.setItem("theme-color", JSON.stringify(color))
 
     } else {
@@ -53,7 +53,7 @@ const darkMode = () => {
         color.white = '#f2f2f2';
         color.show = 'block';
         color.dark = true;
-        color.name = 'Dark Mode'
+        color.name = 'Light Mode'
 
         localStorage.setItem("theme-color", JSON.stringify(color))
     }
