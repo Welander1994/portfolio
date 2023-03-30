@@ -3,7 +3,7 @@ import { ref, onMounted } from 'vue';
 const root = document.querySelector(':root');
 
 let dark = true;
-let name = ref('2')
+let name = ref('Dark mode')
 
 
 const darkMode = () => {
