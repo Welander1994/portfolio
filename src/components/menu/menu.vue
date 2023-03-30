@@ -2,6 +2,7 @@
 import { ref } from 'vue';
 import burger__menu from './burger__menu.vue';
 import header__menu from '../menu/header__menu.vue';
+import lightNdark from '../lightOrDark.vue'
 
 defineProps({
     classes: String
@@ -26,6 +27,7 @@ function openMenu() {
                 <RouterLink to="/Projects">Projects</RouterLink>
                 <RouterLink to="/About">About</RouterLink>
                 <RouterLink to="/Contact">Contact</RouterLink>
+                <lightNdark />
             </div>
             <div class="burger__menu">
                 <burger__menu @mouseup="openMenu()" />
@@ -127,7 +129,7 @@ nav {
             flex-direction: column;
             justify-content: space-evenly;
             background: rgb(20, 20, 20);
-            background: linear-gradient(43deg, rgba(20, 20, 20, 1) 0%, rgba(51, 51, 51, 1) 83%);
+            background: linear-gradient(43deg, var(--bg-2) 0%, var(--bg-1) 83%);
             box-shadow: 0 0 30px #00000069;
             transition: .2s ease-in;
 
