@@ -52,9 +52,9 @@ import hr_ from '../components/hr.vue';
       <h2>Things i learned</h2>
 
       <ul class="box__learn">
-        <li><span> Api: </span> </li>
-        <li><span> Vue - components: </span></li>
-        <li><span>Css Animation: </span></li>
+        <li><span>Api</span> </li>
+        <li><span>Vue - components</span></li>
+        <li><span>Css Animation</span></li>
       </ul>
     </div>
     <div class="box__img">

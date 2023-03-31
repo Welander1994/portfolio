@@ -3,6 +3,7 @@
 import glitchText from '../components/glitchText.vue';
 import menu_bar from '../components/menu/menu.vue'
 import hr_ from '../components/hr.vue';
+import shoppingList from '../components/shoppinglist.vue'
 
 </script>
 
@@ -60,7 +61,7 @@ import hr_ from '../components/hr.vue';
       </ul>
     </div>
     <div class="box__img">
-
+      <shoppingList />
     </div>
 
   </div>
@@ -188,7 +189,7 @@ import hr_ from '../components/hr.vue';
 
     display: flex;
     justify-content: center;
-    padding-top: 6vh;
+    padding-top: 10vh;
 
     .content {
       max-height: 500px;
@@ -235,6 +236,7 @@ import hr_ from '../components/hr.vue';
     .box__img {
       height: auto;
       padding: 0;
+      margin: 20px 0;
       width: 90vw;
     }
   }
