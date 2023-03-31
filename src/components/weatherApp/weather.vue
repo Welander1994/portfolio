@@ -22,7 +22,7 @@ async function fetchWeather() {
             return res.json();
         })
         .then(setResults);
-        
+
 
 };
 
@@ -30,7 +30,7 @@ function setResults(results) {
     weather.value = results;
 
 
-    if (weather._rawValue.message == 'city not found' || weather._rawValue.message == 'Nothing to geocode') {
+    if (weather._rawValue.message === 'city not found' || weather._rawValue.message === 'Nothing to geocode') {
         weather__type.value = '';
     } else {
 
@@ -113,30 +113,30 @@ function dateBuilder() {
             </div>
         </div>
 
-        <div v-if="weather__type == 'Raining'">
+        <div v-if="weather__type === 'Raining'">
             <rain />
         </div>
 
-        <div v-if="weather__type == 'Snowing'">
+        <div v-if="weather__type === 'Snowing'">
             <Snow />
         </div>
 
-        <div v-if="weather__type == 'Misty'">
+        <div v-if="weather__type === 'Misty'">
             <Mist />
         </div>
 
-        <div v-if="weather__type == 'Thundering'">
+        <div v-if="weather__type === 'Thundering'">
             <Thunder />
         </div>
 
-        <div v-if="weather__type == 'Clouds'">
+        <div v-if="weather__type === 'Clouds'">
             <clouds />
         </div>
 
-        <div v-if="weather__type == 'Clear'">
+        <div v-if="weather__type === 'Clear'">
             <sunshine />
         </div>
-       
+
 
     </div>
 </template>

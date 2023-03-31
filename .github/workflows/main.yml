@@ -17,10 +17,12 @@ jobs:
       run: |
         npm install
         npm run build
+        
     - name: 'Qodana Scan'
       uses: JetBrains/qodana-action@main
       env:
         QODANA_TOKEN: ${{ secrets.QODANA }}
+    
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:

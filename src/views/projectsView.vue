@@ -44,7 +44,7 @@ import { onMounted } from 'vue';
                     custom websites to interactive web applications, these projects showcase my skills in design,
                     development.
                 </p>
-                <div class="menu" :class="{ active: menu }">
+                <div class="menu">
 
                     <RouterLink id="weatherApp" to="/WeatherApp">Weather App</RouterLink>
                     <RouterLink id="ShoppingList" to="/Shopping">Shopping list</RouterLink>
