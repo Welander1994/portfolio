@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 
-const mailStatus = ref(false);
+const mailStatus = ref(true);
 
 const changeMailStatus = () => {
     mailStatus.value = !mailStatus.value;
@@ -13,7 +13,7 @@ const mailInfo = ref({
     message: ''
 });
 
-async function postData() {
+/* async function postData() {
     // Default options are marked with *
     const response = await fetch('https://formspree.io/f/xpzelybw', {
         method: "POST",
@@ -26,7 +26,7 @@ async function postData() {
 
     return response.json();
 
-}
+} */
 
 
 
@@ -77,12 +77,12 @@ function onSubmit() {
 }
 
 .model {
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 0;
-
-    width: 100svw;
-    height: 100svh;
+    right: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
     backdrop-filter: blur(2px);
 
     display: flex;
@@ -93,7 +93,7 @@ function onSubmit() {
 
     .content {
         background: rgb(20, 20, 20);
-        background: linear-gradient(43deg, rgba(20, 20, 20, 1) 0%, rgba(51, 51, 51, 1) 83%);
+        background: linear-gradient(43deg, var(--bg-2) 0%, var(--bg-2)0%);
         border: 1px solid var(--purple);
         border-radius: 25px;
         padding: 5vw;
