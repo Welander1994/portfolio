@@ -11,6 +11,7 @@ const api_key = 'f114c1d8edfe049f0d1de15551609120';
 const url_base = 'https://api.openweathermap.org/data/2.5/';
 let query = ref('');
 let weather = ref({});
+let city = ref('Select a place')
 
 let weather__type = ref('');
 
@@ -32,6 +33,7 @@ function setResults(results) {
 
     if (weather._rawValue.message === 'city not found' || weather._rawValue.message === 'Nothing to geocode') {
         weather__type.value = '';
+        city.value = 'city not found';
     } else {
 
         switch (results.weather[0].main) {
@@ -108,7 +110,7 @@ function dateBuilder() {
         </div>
         <div class="weather-wrap" v-else>
             <div class="location-box">
-                <div class="location">City not found</div>
+                <div class="location">{{ city }}</div>
                 <div class="date">{{ dateBuilder() }}</div>
             </div>
         </div>

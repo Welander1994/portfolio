@@ -34,7 +34,6 @@
     clip-path: polygon(29% 61.3%, 71.3% 38.5%, 100% 50%, 100% 100%, 0% 100%, 0% 42.3%);
     animation: mist 10s ease-in-out infinite;
     z-index: -50;
-
 }
 
 .mist2 {
