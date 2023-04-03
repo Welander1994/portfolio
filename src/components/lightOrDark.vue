@@ -84,11 +84,22 @@ onMounted(() => {
 </script>
 
 <template>
-    <a class="toggle" @click="darkMode">{{ name }}</a>
+    <span class="toggle" @click="darkMode">{{ name }}</span>
 </template>
 
 <style lang="scss" scoped>
 .toggle {
     cursor: pointer;
 }
+
+span {
+        text-decoration: none;
+        color: var(--white);
+        padding: 0 20px;
+        transition: .5s;
+    }
+
+    span:hover {
+        text-shadow: #ff1493 5px 0px, limegreen -5px 0px;
+    }
 </style>
